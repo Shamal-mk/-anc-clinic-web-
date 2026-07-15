@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Cosmetology', path: '/departments/cosmetology' },
+    { name: 'Skin & Cosmetology', path: '/departments/cosmetology' },
     { name: 'Ayurveda', path: '/departments/ayurveda' },
     { name: 'Kalari', path: '/departments/kalari' },
   ];
