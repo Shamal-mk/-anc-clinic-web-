@@ -36,10 +36,18 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-champagne-gold mb-5 text-lg">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-sans">
-              <li className="flex gap-2"><span>📍</span><span>ANC Clinic, Kerala, India</span></li>
-              <li className="flex gap-2"><span>📞</span><span>+91 XXXXX XXXXX</span></li>
-              <li className="flex gap-2"><span>✉️</span><span>info@ancclinic.com</span></li>
-              <li className="flex gap-2"><span>🕐</span><span>Mon–Sat: 9 AM – 6 PM</span></li>
+              <li className="flex gap-2"><span>📍</span><span>Anc wellness, town limit, Kadappakada, kollam, pin : 691004</span></li>
+              <li className="flex flex-col gap-1">
+                <div className="flex gap-2">
+                  <span>📞</span>
+                  <span>+91 90741 46088</span>
+                </div>
+                <div className="pl-6 text-[11px] text-gray-400">
+                  88910 87444 / +91 87145 79444
+                </div>
+              </li>
+              <li className="flex gap-2"><span>✉️</span><span>dr@anlc.in</span></li>
+              <li className="flex gap-2"><span>🕐</span><span>9:30 AM – 6:00 PM (Daily, including Sundays)</span></li>
             </ul>
           </div>
         </div>
