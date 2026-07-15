@@ -55,6 +55,51 @@ const Ayurveda = () => {
         </div>
       </div>
 
+      {/* The Mind-Body-Soul Grid */}
+      <div className="py-24 bg-[#FAFAFA]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 lg:gap-12">
+            
+            <div className="flex flex-col items-center group">
+              <div className="w-full aspect-[4/5] overflow-hidden p-2 border border-champagne-gold/60 bg-white transition-all duration-500 hover:shadow-lg">
+                <img 
+                  src="/Ayurveda/80A6413D-A796-4A3D-9178-D36E3A5D1048.PNG" 
+                  alt="Ayurvedic Consultation" 
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-6 font-serif italic text-obsidian-charcoal/90 text-lg tracking-wide">Consultation & Diagnostics</p>
+            </div>
+
+            <div className="flex flex-col items-center group translate-y-0 md:translate-y-12">
+              <div className="w-full aspect-[4/5] overflow-hidden p-2 border border-champagne-gold/60 bg-white transition-all duration-500 hover:shadow-lg">
+                <img 
+                  src="/Ayurveda/CC717543-F79B-4D54-80B7-BCD48B28BBD0.PNG" 
+                  alt="Herbology" 
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-6 font-serif italic text-obsidian-charcoal/90 text-lg tracking-wide">Vedic Herbology</p>
+            </div>
+
+            <div className="flex flex-col items-center group">
+              <div className="w-full aspect-[4/5] overflow-hidden p-2 border border-champagne-gold/60 bg-white transition-all duration-500 hover:shadow-lg">
+                <img 
+                  src="/Ayurveda/DE10D309-579D-4B01-A7AD-777D7D732D76.PNG" 
+                  alt="Ayurvedic Treatment" 
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+              <p className="mt-6 font-serif italic text-obsidian-charcoal/90 text-lg tracking-wide">Panchakarma Therapies</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       {/* Services and Doctor Roster Portfolio */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">

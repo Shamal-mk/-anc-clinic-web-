@@ -39,6 +39,45 @@ const Kalari = () => {
         </div>
       </div>
 
+      {/* The Flow & Force Diptych */}
+      <div className="py-24 bg-obsidian-charcoal">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            
+            <div className="flex flex-col group will-change-transform hover:-translate-y-4 transition-transform duration-1000 ease-out">
+              <div className="w-full aspect-[4/5] overflow-hidden rounded-[2px] shadow-2xl border border-white/10">
+                <img 
+                  src="/Kalari/186E95DA-06E2-419C-AAD9-D7B672E3ED6D.PNG" 
+                  alt="Dynamic Motion - Kalaripayattu" 
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-8 border-l border-champagne-gold pl-6">
+                <h3 className="text-2xl font-serif text-white mb-2 tracking-wide uppercase">The Force</h3>
+                <p className="text-white/60 font-sans text-sm font-light">Discipline, structural alignment, and dynamic motion.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col group will-change-transform translate-y-0 md:translate-y-16 hover:translate-y-12 transition-transform duration-1000 ease-out">
+              <div className="w-full aspect-[4/5] overflow-hidden rounded-[2px] shadow-2xl border border-white/10">
+                <img 
+                  src="/Kalari/2CB1B5AE-3058-455C-AFA2-F4CBB61C9308.PNG" 
+                  alt="Restorative Calmness - Marma Healing" 
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
+              <div className="mt-8 border-l border-champagne-gold pl-6">
+                <h3 className="text-2xl font-serif text-white mb-2 tracking-wide uppercase">The Flow</h3>
+                <p className="text-white/60 font-sans text-sm font-light">Stillness, neuro-muscular release, and Marma healing.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       {/* Portfolio & Details */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">

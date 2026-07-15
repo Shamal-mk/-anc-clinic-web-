@@ -80,6 +80,40 @@ const Cosmetology = () => {
         </div>
       </div>
     </div>
+
+    {/* The Aesthetic Triptych Gallery */}
+    <div className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="md:col-span-2 overflow-hidden rounded-[16px] shadow-md hover:shadow-xl transition-shadow duration-500 group">
+            <img 
+              src="/Skin and cosmetology/460AED01-8EAA-4467-BD2C-0C9D31B764DE.PNG" 
+              alt="Advanced clinical treatment" 
+              className="w-full h-full object-cover aspect-[16/10] group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="lazy"
+            />
+          </div>
+          <div className="flex flex-col gap-6">
+            <div className="overflow-hidden rounded-[16px] shadow-md hover:shadow-xl transition-shadow duration-500 group">
+              <img 
+                src="/Skin and cosmetology/98DA988A-6C6A-49AE-8F0F-8C2D96072F48.PNG" 
+                alt="Premium treatments" 
+                className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[16px] shadow-md hover:shadow-xl transition-shadow duration-500 group">
+              <img 
+                src="/Skin and cosmetology/CB2C1BC0-3CF5-446B-A31C-E353A45E8097.PNG" 
+                alt="Serene clinic interior" 
+                className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
