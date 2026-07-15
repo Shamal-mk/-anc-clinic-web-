@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,30 +6,38 @@
 
 @layer base {
   body {
-    @apply font-sans bg-clinical-white text-slate-gray antialiased;
+    @apply font-sans bg-clinical-white text-obsidian-charcoal antialiased selection:bg-champagne-gold/20 selection:text-obsidian-charcoal;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-slate-gray;
+    @apply font-serif text-obsidian-charcoal tracking-wide;
   }
 }
 
-/* Custom premium micro-animations */
 @layer utilities {
   .animate-fade-in-up {
-    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
-  .animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  .animate-slow-fade {
+    animation: fadeIn 1.5s ease-out forwards;
   }
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

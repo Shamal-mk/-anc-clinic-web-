@@ -8,90 +8,142 @@ const Home = () => {
       <Hero />
 
       {/* Stats Strip */}
-      <div className="bg-champagne-gold py-8">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+      <div className="bg-royal-navy py-12 border-y border-platinum-slate/10">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
           {[
             { value: '3', label: 'Specialised Units' },
-            { value: '9+', label: 'Expert Doctors' },
-            { value: '10K+', label: 'Happy Patients' },
-            { value: '15+', label: 'Years of Excellence' },
+            { value: '9', label: 'Elite Medical Consultants' },
+            { value: '15+', label: 'Years of Clinical Excellence' },
+            { value: '10K+', label: 'Transformations Completed' },
           ].map((s) => (
-            <div key={s.label}>
-              <p className="text-4xl font-serif font-bold">{s.value}</p>
-              <p className="text-sm font-sans mt-1 opacity-90">{s.label}</p>
+            <div key={s.label} className="group">
+              <p className="text-4xl md:text-5xl font-serif font-bold text-champagne-gold tracking-tight group-hover:scale-105 transition-transform duration-300">
+                {s.value}
+              </p>
+              <p className="text-xs uppercase tracking-widest font-sans mt-2 text-white/60">{s.label}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Departments */}
-      <section id="departments" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-champagne-gold font-sans text-sm uppercase tracking-widest mb-3">Our Specialities</p>
-            <h2 className="text-4xl font-serif text-slate-gray mb-4">Three Pillars of Care</h2>
-            <div className="h-1 w-24 bg-champagne-gold mx-auto rounded-full" />
+      {/* Asymmetric Three-Unit Matrix */}
+      <section id="departments" className="py-32 bg-white relative">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          
+          <div className="text-center mb-24">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">
+              Clinical Zoning
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">
+              Three Pillars of Integrity
+            </h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
-              {
-                title: 'Skin & Cosmetology',
-                desc: 'Advanced medical aesthetics, dermatology, and reconstructive procedures in a premium clinical setting.',
-                link: '/departments/cosmetology',
-                icon: '✨',
-                color: 'from-rose-50 to-white',
-              },
-              {
-                title: "Dr. Unnikrishnan's Samsara Ayurveda",
-                desc: 'Authentic Panchakarma, Ayurvedic healing, and holistic wellness guided by expert Vaidyas.',
-                link: '/departments/ayurveda',
-                icon: '🌿',
-                color: 'from-sage-green/10 to-white',
-              },
-              {
-                title: 'CVN Kalari',
-                desc: 'Traditional Kalari Chikilsa, Marma therapy, and Kalaripayattu training from master Gurukkals.',
-                link: '/departments/kalari',
-                icon: '⚔️',
-                color: 'from-amber-50 to-white',
-              },
-            ].map((dept) => (
-              <Link
-                to={dept.link}
-                key={dept.title}
-                className={`group block bg-gradient-to-b ${dept.color} p-8 rounded-3xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2`}
-              >
-                <div className="text-5xl mb-6">{dept.icon}</div>
-                <h3 className="text-2xl font-serif text-slate-gray mb-4 group-hover:text-sage-green transition-colors">{dept.title}</h3>
-                <p className="text-gray-500 font-sans leading-relaxed text-sm">{dept.desc}</p>
-                <div className="mt-8 flex items-center text-champagne-gold font-medium text-sm">
-                  Explore Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform">→</span>
-                </div>
-              </Link>
-            ))}
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
+            
+            {/* Unit Card 1: Cosmetology - Alternating depth: Normal */}
+            <Link
+              to="/departments/cosmetology"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-champagne-gold/40 overflow-hidden"
+            >
+              {/* Parallax Background Glow */}
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-champagne-gold/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              
+              <div>
+                <div className="text-3xl mb-8 font-light text-champagne-gold">01 / ✨</div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-champagne-gold transition-colors duration-300">
+                  Skin & Cosmetology
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Experience world-class reconstructive, clinical dermatology, and facial rejuvenation treatments. 
+                  Where precise medical care meets aesthetic mastery.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-champagne-gold font-semibold">
+                Explore Aesthetics Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
+            {/* Unit Card 2: Samsara Ayurveda - Alternating depth: Offset Upwards */}
+            <Link
+              to="/departments/ayurveda"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 lg:-translate-y-6 hover:border-sage-green/40 overflow-hidden"
+            >
+              {/* Embedded High-Fidelity Header Logo */}
+              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+                <img
+                  src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
+                  alt="Samsara Ayurveda Unit Logo"
+                  className="h-16 w-auto object-contain"
+                />
+              </div>
+
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-sage-green/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              
+              <div>
+                <div className="text-3xl mb-4 font-light text-sage-green">02 / 🌿</div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-sage-green transition-colors duration-300">
+                  Samsara Ayurveda
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies 
+                  and ancient remedies customized to optimize system balance.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-sage-green font-semibold">
+                Explore Ayurveda Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
+            {/* Unit Card 3: CVN Kalari - Alternating depth: Offset Downwards */}
+            <Link
+              to="/departments/kalari"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:translate-y-6 hover:border-royal-navy/40 overflow-hidden"
+            >
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              
+              <div>
+                <div className="text-3xl mb-8 font-light text-royal-navy">03 / ⚔️</div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-royal-navy transition-colors duration-300">
+                  CVN Kalari Chikilsa
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Traditional Marma point therapy and orthopaedic treatments derived from Kalaripayattu systems. 
+                  Designed to restore skeletal flow and muscular strength.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-royal-navy font-semibold">
+                Explore Kalari Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
           </div>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-clinical-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-champagne-gold font-sans text-sm uppercase tracking-widest mb-3">Our Promise</p>
-            <h2 className="text-4xl font-serif text-slate-gray mb-4">Why Choose ANC Clinic?</h2>
-            <div className="h-1 w-24 bg-champagne-gold mx-auto rounded-full" />
+      <section className="py-32 bg-clinical-white border-t border-platinum-slate/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-20">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Clinical Standards</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient-Centric Philosophies</h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: '🏆', title: 'Expert Specialists', desc: 'A curated team of doctors across aesthetics, Ayurveda, and Kalari.' },
-              { icon: '🌿', title: 'Holistic Approach', desc: 'We treat the whole person — mind, body, and spirit — not just symptoms.' },
-              { icon: '✨', title: 'Premium Experience', desc: 'State-of-the-art facilities designed for comfort, privacy, and results.' },
-              { icon: '❤️', title: 'Patient-Centred', desc: 'Every treatment plan is personalised to your unique needs and goals.' },
+              { icon: '💎', title: 'World-Class Faculty', desc: 'Elite practitioners with global standards and decades of hands-on expertise.' },
+              { icon: '🧬', title: 'Contextual Zoning', desc: 'Distinct care zones configured specifically to their respective scientific systems.' },
+              { icon: '🌿', title: 'Integrative Protocols', desc: 'Merging cutting-edge medical technologies with ancient wisdom.' },
+              { icon: '🔒', title: 'Private Consultations', desc: 'Absolute confidentiality with one-on-one tailored restorative programs.' },
             ].map((f) => (
-              <div key={f.title} className="text-center p-6 rounded-2xl hover:bg-white hover:shadow-md transition-all duration-300">
-                <div className="text-4xl mb-4">{f.icon}</div>
-                <h3 className="font-serif text-slate-gray text-xl mb-3">{f.title}</h3>
-                <p className="text-gray-500 text-sm font-sans leading-relaxed">{f.desc}</p>
+              <div key={f.title} className="bg-white p-8 rounded-[20px] border border-platinum-slate/20 hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl mb-6">{f.icon}</div>
+                <h3 className="font-serif text-obsidian-charcoal text-lg mb-3">{f.title}</h3>
+                <p className="text-obsidian-charcoal/60 text-xs font-sans leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -100,16 +152,21 @@ const Home = () => {
 
       <Testimonials />
 
-      {/* CTA Banner */}
-      <section className="py-20 bg-slate-gray text-white text-center px-4">
-        <h2 className="text-4xl font-serif mb-4">Ready to Begin Your Healing Journey?</h2>
-        <p className="text-gray-300 font-sans mb-8 max-w-xl mx-auto">Book a consultation with our specialists today and take the first step toward wellness.</p>
-        <Link
-          to="/booking"
-          className="inline-block px-10 py-4 bg-champagne-gold hover:bg-yellow-600 text-white rounded-full font-medium text-lg shadow-xl transition-all transform hover:-translate-y-1"
-        >
-          Book an Appointment
-        </Link>
+      {/* Call to Action */}
+      <section className="py-28 bg-obsidian-charcoal text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-royal-navy to-obsidian-charcoal opacity-80" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white leading-tight">Begin Your Personal Wellness Paradigm</h2>
+          <p className="text-white/60 font-sans font-light mb-10 max-w-lg mx-auto text-sm leading-relaxed">
+            Schedule a confidential consultation with our specialists to customize your treatment process.
+          </p>
+          <Link
+            to="/booking"
+            className="inline-block px-10 py-4 bg-champagne-gold hover:bg-champagne-gold/90 text-white rounded-full font-sans text-xs uppercase tracking-widest shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+          >
+            Request Private Consultation
+          </Link>
+        </div>
       </section>
     </div>
   );

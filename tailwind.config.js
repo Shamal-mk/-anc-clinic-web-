@@ -8,14 +8,20 @@ export default {
     extend: {
       colors: {
         'sage-green': '#A3B18A',
-        'champagne-gold': '#D4AF37',
-        'clinical-white': '#F8F9FA',
-        'slate-gray': '#343A40',
+        'eucalyptus': '#588157',
+        'champagne-gold': '#C5A880', // Refined softer luxury gold
+        'royal-navy': '#0F172A',
+        'clinical-white': '#FAF9F6', // Off-white/Alabaster luxury canvas
+        'obsidian-charcoal': '#121212',
+        'platinum-slate': '#E2E8F0',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+        sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
       },
+      letterSpacing: {
+        widest: '.2em',
+      }
     },
   },
   plugins: [],
