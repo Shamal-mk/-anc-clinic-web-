@@ -9,9 +9,9 @@ export default {
       colors: {
         'sage-green': '#A3B18A',
         'eucalyptus': '#588157',
-        'champagne-gold': '#C5A880', // Refined softer luxury gold
+        'champagne-gold': '#C5A880',
         'royal-navy': '#0F172A',
-        'clinical-white': '#FAF9F6', // Off-white/Alabaster luxury canvas
+        'clinical-white': '#FAF9F6',
         'obsidian-charcoal': '#121212',
         'platinum-slate': '#E2E8F0',
       },
@@ -21,6 +21,9 @@ export default {
       },
       letterSpacing: {
         widest: '.2em',
+      },
+      transitionTimingFunction: {
+        'luxury': 'cubic-bezier(0.25, 1, 0.5, 1)',
       }
     },
   },

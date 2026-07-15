@@ -61,7 +61,7 @@ const Ayurveda = () => {
           
           <h2 className="text-3xl font-serif text-obsidian-charcoal mb-12 text-center">Ayurvedic Clinical Specialties</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-28">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-28">
             {[
               { icon: '🌿', label: 'Panchakarma Detox' },
               { icon: '👁️', label: 'Netra Chikitsa (Eye Care)' },

@@ -9,13 +9,14 @@ interface DoctorProfileProps {
 
 const DoctorProfile: React.FC<DoctorProfileProps> = ({ name, specialty, imageSrc, focuses = [] }) => {
   return (
-    <div className="group flex flex-col bg-white rounded-[24px] p-6 border border-platinum-slate/30 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
-      {/* Uniform Aspect-Ratio Image Mask */}
-      <div className="w-full aspect-[4/5] rounded-[16px] overflow-hidden mb-6 relative">
+    <div className="group flex flex-col bg-white rounded-[24px] p-6 border border-platinum-slate/30 shadow-sm hover:shadow-xl transition-luxury will-change-transform-opacity hover:-translate-y-1 w-full">
+      {/* Uniform Aspect-Ratio Image Mask (CLS Prevention) */}
+      <div className="w-full aspect-[4/5] rounded-[16px] overflow-hidden mb-6 relative bg-clinical-white">
         <div className="absolute inset-0 bg-obsidian-charcoal/5 group-hover:bg-transparent transition-colors duration-500 z-10" />
         <img 
           src={imageSrc} 
           alt={name} 
+          loading="lazy"
           className="w-full h-full object-cover transform group-hover:scale-102 transition-transform duration-700"
         />
       </div>

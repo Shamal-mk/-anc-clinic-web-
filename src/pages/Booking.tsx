@@ -63,11 +63,11 @@ const Booking = () => {
     setTimeout(() => {
       setStep(nextStep);
       setTransitioning(false);
-    }, 200); // matching animation timing
+    }, 200);
   };
 
   return (
-    <div className="pt-24 min-h-screen bg-clinical-white">
+    <div className="pt-24 min-h-screen bg-clinical-white overscroll-y-contain">
       <div className="max-w-4xl mx-auto px-6 py-16">
         
         {/* Header */}
@@ -79,9 +79,9 @@ const Booking = () => {
 
         {/* Progress Matrix */}
         <div className="flex items-center justify-between mb-16 relative">
-          <div className="absolute top-4 left-0 right-0 h-[1px] bg-platinum-slate z-0" />
+          <div className="absolute top-[18px] left-0 right-0 h-[1px] bg-platinum-slate z-0" />
           <div
-            className="absolute top-4 left-0 h-[1px] bg-champagne-gold z-0 transition-all duration-500"
+            className="absolute top-[18px] left-0 h-[1px] bg-champagne-gold z-0 transition-all duration-500"
             style={{ width: `${((step - 1) / 3) * 100}%` }}
           />
           {progressSteps.map((label, idx) => (
@@ -93,7 +93,7 @@ const Booking = () => {
                     : step === idx + 1
                     ? 'bg-champagne-gold text-white ring-4 ring-champagne-gold/15'
                     : 'bg-white border border-platinum-slate text-obsidian-charcoal/40'
-                }`}
+                } min-w-[36px] min-h-[36px]`}
               >
                 {step > idx + 1 ? '✓' : idx + 1}
               </div>
@@ -107,7 +107,7 @@ const Booking = () => {
         </div>
 
         {/* Wizard Container with fade micro-animation */}
-        <div className={`bg-white rounded-[32px] border border-platinum-slate/30 shadow-xl p-8 md:p-12 transition-all duration-300 ${
+        <div className={`bg-white rounded-[32px] border border-platinum-slate/30 shadow-xl p-8 md:p-12 transition-luxury will-change-transform-opacity ${
           transitioning ? 'opacity-0 transform translate-y-2' : 'opacity-100 transform translate-y-0'
         }`}>
           
@@ -124,7 +124,7 @@ const Booking = () => {
                     <button
                       key={d.id}
                       onClick={() => { setSelectedDept(d.id); setSelectedDoctor(''); }}
-                      className={`flex flex-col justify-between p-6 rounded-[24px] border-2 text-left transition-all duration-300 h-64 ${
+                      className={`flex flex-col justify-between p-6 rounded-[24px] border-2 text-left transition-luxury will-change-transform-opacity h-64 min-h-[48px] ${
                         isSelected
                           ? d.colorClass
                           : 'border-platinum-slate hover:border-obsidian-charcoal/40 bg-white'
@@ -145,7 +145,7 @@ const Booking = () => {
                 <button
                   disabled={!selectedDept}
                   onClick={() => handleStepChange(2)}
-                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-colors shadow-md"
+                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-luxury will-change-transform-opacity shadow-md min-h-[48px] min-w-[120px] flex items-center justify-center"
                 >
                   Continue →
                 </button>
@@ -166,14 +166,14 @@ const Booking = () => {
                     <button
                       key={d.id}
                       onClick={() => setSelectedDoctor(d.id)}
-                      className={`flex items-center gap-6 p-6 rounded-[20px] border-2 text-left transition-all duration-300 ${
+                      className={`flex items-center gap-6 p-6 rounded-[20px] border-2 text-left transition-luxury will-change-transform-opacity min-h-[48px] ${
                         isSelected
                           ? 'border-champagne-gold bg-champagne-gold/5'
                           : 'border-platinum-slate hover:border-obsidian-charcoal/40 bg-white'
                       }`}
                     >
-                      <div className="w-16 h-16 rounded-full overflow-hidden border border-platinum-slate/30 flex-shrink-0">
-                        <img src={d.avatar} alt={d.name} className="w-full h-full object-cover" />
+                      <div className="w-16 h-16 rounded-full overflow-hidden border border-platinum-slate/30 flex-shrink-0 bg-clinical-white aspect-square">
+                        <img src={d.avatar} alt={d.name} loading="lazy" className="w-full h-full object-cover" />
                       </div>
                       <div>
                         <p className="font-serif font-bold text-obsidian-charcoal text-lg">{d.name}</p>
@@ -188,14 +188,14 @@ const Booking = () => {
               <div className="mt-12 flex justify-between">
                 <button 
                   onClick={() => handleStepChange(1)} 
-                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-colors"
+                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-luxury min-h-[48px] flex items-center justify-center"
                 >
                   Back
                 </button>
                 <button
                   disabled={!selectedDoctor}
                   onClick={() => handleStepChange(3)}
-                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-colors shadow-md"
+                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-luxury will-change-transform-opacity shadow-md min-h-[48px] min-w-[120px] flex items-center justify-center"
                 >
                   Continue →
                 </button>
@@ -217,7 +217,7 @@ const Booking = () => {
                     min={today}
                     value={selectedDate}
                     onChange={(e) => setSelectedDate(e.target.value)}
-                    className="w-full border border-platinum-slate rounded-[16px] px-4 py-3.5 font-sans text-sm text-obsidian-charcoal focus:outline-none focus:ring-2 focus:ring-champagne-gold/20"
+                    className="w-full border border-platinum-slate rounded-[16px] px-4 py-3.5 font-sans text-sm text-obsidian-charcoal focus:outline-none focus:ring-2 focus:ring-champagne-gold/20 min-h-[48px]"
                   />
                 </div>
 
@@ -228,7 +228,7 @@ const Booking = () => {
                       <button
                         key={t}
                         onClick={() => setSelectedTime(t)}
-                        className={`py-3 rounded-[12px] text-xs font-sans transition-all duration-300 ${
+                        className={`min-h-[48px] rounded-[12px] text-xs font-sans transition-luxury will-change-transform-opacity flex items-center justify-center ${
                           selectedTime === t
                             ? 'bg-champagne-gold text-white shadow-md'
                             : 'bg-clinical-white border border-platinum-slate/30 text-obsidian-charcoal/70 hover:border-champagne-gold'
@@ -252,7 +252,7 @@ const Booking = () => {
                       placeholder="Full name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20"
+                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20 min-h-[48px]"
                     />
                   </div>
                   <div>
@@ -262,7 +262,7 @@ const Booking = () => {
                       placeholder="+91 XXXXXXXXXX"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20"
+                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20 min-h-[48px]"
                     />
                   </div>
                   <div>
@@ -272,7 +272,7 @@ const Booking = () => {
                       placeholder="you@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20"
+                      className="w-full border border-platinum-slate rounded-[12px] px-4 py-3 text-sm font-sans focus:outline-none focus:ring-2 focus:ring-champagne-gold/20 min-h-[48px]"
                     />
                   </div>
                 </div>
@@ -281,14 +281,14 @@ const Booking = () => {
               <div className="flex justify-between">
                 <button 
                   onClick={() => handleStepChange(2)} 
-                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-colors"
+                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-luxury min-h-[48px] flex items-center justify-center"
                 >
                   Back
                 </button>
                 <button
                   disabled={!selectedDate || !selectedTime || !formData.name || !formData.phone}
                   onClick={() => handleStepChange(4)}
-                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-colors shadow-md"
+                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full disabled:opacity-40 disabled:cursor-not-allowed hover:bg-champagne-gold/90 transition-luxury will-change-transform-opacity shadow-md min-h-[48px] min-w-[120px] flex items-center justify-center"
                 >
                   Review Request →
                 </button>
@@ -342,7 +342,7 @@ const Booking = () => {
               <div className="flex justify-between">
                 <button 
                   onClick={() => handleStepChange(3)} 
-                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-colors"
+                  className="px-6 py-3 border border-platinum-slate text-obsidian-charcoal/60 rounded-full text-xs uppercase tracking-widest font-sans hover:border-obsidian-charcoal transition-luxury min-h-[48px] flex items-center justify-center"
                 >
                   Edit details
                 </button>
@@ -353,7 +353,7 @@ const Booking = () => {
                     setSelectedDept(''); setSelectedDoctor(''); setSelectedDate(''); setSelectedTime('');
                     setFormData({ name: '', phone: '', email: '' });
                   }}
-                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full hover:bg-champagne-gold/90 transition-colors shadow-lg"
+                  className="px-8 py-3.5 bg-champagne-gold text-white text-xs uppercase tracking-widest font-sans rounded-full hover:bg-champagne-gold/90 transition-luxury shadow-lg min-h-[48px] flex items-center justify-center"
                 >
                   Confirm Reservation
                 </button>

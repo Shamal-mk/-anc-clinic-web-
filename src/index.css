@@ -15,10 +15,18 @@
 
 @layer utilities {
   .animate-fade-in-up {
-    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: fadeInUp 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
   }
   .animate-slow-fade {
-    animation: fadeIn 1.5s ease-out forwards;
+    animation: fadeIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+  .transition-luxury {
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .will-change-transform-opacity {
+    will-change: transform, opacity;
   }
 }
 
