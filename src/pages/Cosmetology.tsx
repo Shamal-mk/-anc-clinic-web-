@@ -1,4 +1,3 @@
-import React from 'react';
 import DoctorProfile from '../components/DoctorProfile';
 
 const Cosmetology = () => {
