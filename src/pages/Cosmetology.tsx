@@ -79,10 +79,9 @@ const Cosmetology = () => {
 
         </div>
       </div>
-    </div>
 
-    {/* The Aesthetic Triptych Gallery */}
-    <div className="py-16 bg-white">
+      {/* The Aesthetic Triptych Gallery */}
+      <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2 overflow-hidden rounded-[16px] shadow-md hover:shadow-xl transition-shadow duration-500 group">
@@ -113,6 +112,7 @@ const Cosmetology = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
