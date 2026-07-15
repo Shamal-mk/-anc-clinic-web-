@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="col-span-6 transform translate-y-8 hover:-translate-y-1 transition-transform duration-500">
             <div className="aspect-[4/5] rounded-[16px] overflow-hidden border border-platinum-slate/30 shadow-md bg-white p-2">
               <img
-                src="/doctors/Dr. Aparna Krishna.jpeg"
+                src="/hero/54FDA69F-D0EE-43D1-AFAD-0D998C2C6035.PNG"
                 alt="Cosmetology Practice"
                 className="w-full h-full object-cover rounded-[12px]"
               />
@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="col-span-6 hover:-translate-y-1 transition-transform duration-500">
             <div className="aspect-[4/5] rounded-[16px] overflow-hidden border border-platinum-slate/30 shadow-md bg-white p-2">
               <img
-                src="/doctors/Dr. Heera Ratnam.jpeg"
+                src="/hero/3AFC5AA8-8EF4-4F96-BA4C-7BDC9CCA883B.PNG"
                 alt="Ayurvedic Diagnostics"
                 className="w-full h-full object-cover rounded-[12px]"
               />
@@ -69,7 +69,7 @@ const Hero = () => {
           <div className="col-span-8 col-start-3 -translate-y-4 hover:-translate-y-5 transition-transform duration-500">
             <div className="aspect-[16/10] rounded-[16px] overflow-hidden border border-platinum-slate/30 shadow-md bg-white p-2">
               <img
-                src="/doctors/Sivakumar Gurukkal.jpeg"
+                src="/hero/BF697CC1-3452-49F4-8DAB-C65B6C4004F2.PNG"
                 alt="Kalari Chikilsa"
                 className="w-full h-full object-cover rounded-[12px]"
               />
