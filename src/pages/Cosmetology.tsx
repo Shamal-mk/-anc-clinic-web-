@@ -17,7 +17,7 @@ const Cosmetology = () => {
     { 
       name: 'Dr. Akhila', 
       specialty: 'PLASTIC AND RECONSTRUCTIVE SURGEON', 
-      imageSrc: '/doctors/Dr. Aparna Krishna.jpeg', // Using available portrait as placeholder
+      imageSrc: '/doctors/Dr. Akhila.jpeg',
       focuses: ['Microvascular Surgery', 'Reconstructive Aesthetics', 'Burn Care']
     },
     { 
