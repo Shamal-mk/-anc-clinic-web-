@@ -23,7 +23,7 @@ const Cosmetology = () => {
     { 
       name: 'Dr. Binu Sethu', 
       specialty: 'CONSULTANT DERMATOLOGIST', 
-      imageSrc: '/doctors/Dr. Aromal Chekavar.jpeg', // Using available portrait as placeholder
+      imageSrc: '/doctors/Dr. Binu Sethu.jpeg',
       focuses: ['Clinical Dermatology', 'Scar Treatments', 'Psoriasis & Acne']
     },
   ];
