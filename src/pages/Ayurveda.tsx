@@ -97,7 +97,7 @@ const Ayurveda = () => {
             <div className="order-2 md:order-1 relative">
               <div className="aspect-[4/5] rounded-[24px] overflow-hidden shadow-xl border border-platinum-slate/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1608248593842-8d7d9f7833a6?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=1000&auto=format&fit=crop" 
                   alt="Traditional Ayurvedic Herbs" 
                   className="w-full h-full object-cover"
                 />
@@ -212,7 +212,7 @@ const Ayurveda = () => {
             {/* Herbal Medicine */}
             <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto md:min-h-[520px]">
               <img 
-                src="https://images.unsplash.com/photo-1611078816912-30691ce2cb82?q=80&w=1000&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1596755389378-c11ddece8d9e?q=80&w=1000&auto=format&fit=crop" 
                 alt="Ayurvedic Oils" 
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />

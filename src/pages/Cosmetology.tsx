@@ -54,12 +54,12 @@ const Cosmetology = () => {
     {
       title: 'Laser Aesthetics',
       desc: 'Precision laser therapy for pigmentation, hair removal, and vascular lesions.',
-      img: 'https://images.unsplash.com/photo-1512496015851-a1c8caacb6a8?q=80&w=800&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1533095361025-a131f6f1c4df?q=80&w=800&auto=format&fit=crop'
     },
     {
       title: 'Botox & Dermal Fillers',
       desc: 'Artful injectables to restore volume, contour features, and smooth expression lines.',
-      img: 'https://images.unsplash.com/photo-1620052329302-332e185c7cb4?q=80&w=800&auto=format&fit=crop'
+      img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=800&auto=format&fit=crop'
     }
   ];
 
@@ -130,7 +130,7 @@ const Cosmetology = () => {
             <div className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                 <img 
-                  src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop" 
                   alt="Modern skin analysis" 
                   className="w-full h-full object-cover"
                 />
