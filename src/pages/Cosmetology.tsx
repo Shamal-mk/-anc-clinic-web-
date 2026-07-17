@@ -245,15 +245,22 @@ const Cosmetology = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="text-4xl font-serif mb-16">Clinical Results</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {[1, 2].map((i) => (
-              <div key={i} className="aspect-[16/10] bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden group">
-                <div className="absolute inset-0 flex">
-                  <div className="w-1/2 bg-white/5 border-r border-white/20" />
-                  <div className="w-1/2 bg-transparent" />
-                </div>
-                <span className="font-sans text-sm font-light tracking-widest text-white/40 z-10 group-hover:scale-105 transition-transform duration-500">BEFORE / AFTER INTERACTIVE VIEWER</span>
-              </div>
-            ))}
+            <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group">
+              <img
+                src="/Skin and cosmetology/98DA988A-6C6A-49AE-8F0F-8C2D96072F48.PNG"
+                alt="Clinical result – Treatment 1"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group">
+              <img
+                src="/Skin and cosmetology/CB2C1BC0-3CF5-446B-A31C-E353A45E8097.PNG"
+                alt="Clinical result – Treatment 2"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
