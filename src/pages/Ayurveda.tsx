@@ -210,7 +210,7 @@ const Ayurveda = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Herbal Medicine */}
-            <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto">
+            <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto md:min-h-[520px]">
               <img 
                 src="https://images.unsplash.com/photo-1611078816912-30691ce2cb82?q=80&w=1000&auto=format&fit=crop" 
                 alt="Ayurvedic Oils" 
@@ -227,7 +227,7 @@ const Ayurveda = () => {
             </div>
 
             {/* Patient Experience */}
-            <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto">
+            <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto md:min-h-[520px]">
               <img 
                 src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1000&auto=format&fit=crop" 
                 alt="Calm healing environment" 
