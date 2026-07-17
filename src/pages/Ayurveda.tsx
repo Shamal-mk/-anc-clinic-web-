@@ -72,11 +72,11 @@ const Ayurveda = () => {
       <section className="relative overflow-hidden bg-gradient-to-b from-sage-green/10 via-clinical-white to-clinical-white py-28 px-6">
         <div className="max-w-4xl mx-auto text-center z-10 relative animate-fade-in-up">
           <div className="flex justify-center mb-8">
-            <div className="bg-white rounded-[20px] shadow-sm p-6 border border-platinum-slate/20 inline-block">
+            <div className="bg-white rounded-[20px] shadow-md p-8 border border-platinum-slate/20 inline-block">
               <img
                 src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
                 alt="Dr. Unnikrishnan's Samsara Ayurveda Unit Logo"
-                className="h-20 md:h-24 w-auto object-contain"
+                className="h-28 md:h-36 lg:h-40 w-auto object-contain"
               />
             </div>
           </div>
