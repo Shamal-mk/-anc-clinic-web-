@@ -26,6 +26,103 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Founder's Message & Mission */}
+      <section
+        className="py-32 bg-white border-t border-platinum-slate/20"
+        id="founders-message"
+        style={{ opacity: 0, transform: 'translateY(40px)', transition: 'opacity 0.9s cubic-bezier(0.25, 1, 0.5, 1), transform 0.9s cubic-bezier(0.25, 1, 0.5, 1)' }}
+        ref={(el) => {
+          if (!el) return;
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                (el as HTMLElement).style.opacity = '1';
+                (el as HTMLElement).style.transform = 'translateY(0)';
+                observer.disconnect();
+              }
+            },
+            { threshold: 0.1 }
+          );
+          observer.observe(el);
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+            {/* Left Column: Founder's Message */}
+            <div>
+              <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">A Word From Our Founder</span>
+              <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-3 mb-6 leading-snug">
+                Founder's Message
+              </h2>
+              <div className="h-[1px] w-16 bg-champagne-gold mb-10" />
+
+              <div className="space-y-6 text-obsidian-charcoal/70 font-sans font-light text-base leading-relaxed">
+                <p>
+                  At ANC, healing has always been more than treating illness—it is about restoring health, hope, and harmony. Inspired by the vision and values of my father, Dr. Unnikrishnan, whose lifelong dedication to Ayurveda touched countless lives, I am honoured to continue his legacy while embracing the advancements of modern medicine.
+                </p>
+                <p>
+                  Our dream is to create a healthcare destination where the timeless wisdom of Ayurveda complements evidence-based allopathy, supported by rehabilitation, medical aesthetics, wellness therapies, and the rich tradition of CVN Kalari. We believe every individual deserves care that is ethical, compassionate, and tailored to their unique needs.
+                </p>
+                <p>
+                  At ANC, our commitment is to help every patient live healthier, stronger, and more confident lives through an integrated approach to healing and wellness.
+                </p>
+              </div>
+
+              {/* Signature */}
+              <div className="mt-10 pt-8 border-t border-platinum-slate/30">
+                <p className="font-serif italic text-obsidian-charcoal text-xl mb-1">— Dr. Aparna</p>
+                <p className="text-xs uppercase tracking-widest text-champagne-gold font-sans font-semibold">Cosmetologist &amp; Medical Director</p>
+              </div>
+            </div>
+
+            {/* Right Column: Our Mission */}
+            <div
+              style={{ opacity: 0, transform: 'translateY(40px)', transition: 'opacity 0.9s 0.2s cubic-bezier(0.25, 1, 0.5, 1), transform 0.9s 0.2s cubic-bezier(0.25, 1, 0.5, 1)' }}
+              ref={(el) => {
+                if (!el) return;
+                const observer = new IntersectionObserver(
+                  ([entry]) => {
+                    if (entry.isIntersecting) {
+                      (el as HTMLElement).style.opacity = '1';
+                      (el as HTMLElement).style.transform = 'translateY(0)';
+                      observer.disconnect();
+                    }
+                  },
+                  { threshold: 0.1 }
+                );
+                observer.observe(el);
+              }}
+            >
+              <span className="text-sage-green uppercase tracking-widest text-xs font-semibold">What We Stand For</span>
+              <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-3 mb-6 leading-snug">
+                Our Mission
+              </h2>
+              <div className="h-[1px] w-16 bg-sage-green mb-10" />
+
+              <div className="space-y-5">
+                {[
+                  { icon: '🤍', text: 'Deliver personalised, ethical, and compassionate healthcare for every patient.' },
+                  { icon: '🌿', text: 'Integrate Ayurveda, allopathy, rehabilitation, medical aesthetics, wellness therapies, and the discipline of CVN Kalari under one roof.' },
+                  { icon: '🔬', text: 'Provide evidence-based treatments focused on prevention, recovery, and long-term wellness.' },
+                  { icon: '🛡️', text: 'Foster a patient-first culture built on trust, respect, and clinical excellence.' },
+                  { icon: '🌱', text: 'Inspire healthier communities by making quality, integrated healthcare accessible and sustainable.' },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-5 bg-clinical-white rounded-[16px] p-6 border border-platinum-slate/25 hover:shadow-md hover:border-sage-green/30 transition-all duration-300"
+                  >
+                    <span className="text-2xl flex-shrink-0 mt-0.5">{item.icon}</span>
+                    <p className="text-obsidian-charcoal/70 font-sans font-light text-sm leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Asymmetric Three-Unit Matrix */}
       <section id="departments" className="py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
