@@ -24,7 +24,16 @@ const Kalari = () => {
       {/* Editorial dark hero */}
       <div className="relative bg-obsidian-charcoal text-white py-28 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-eucalyptus/30 to-obsidian-charcoal opacity-90" />
-        <div className="relative max-w-7xl mx-auto text-center z-10 animate-fade-in-up">
+        <div className="relative max-w-7xl mx-auto text-center z-10 animate-fade-in-up flex flex-col items-center">
+          <div className="mb-10 inline-flex justify-center">
+            <div className="bg-white rounded-[20px] shadow-lg p-6 border border-white/20 inline-block">
+              <img
+                src="/logos/Cvn Kalari Logo.jpg"
+                alt="CVN Kalari Official Logo"
+                className="h-32 md:h-40 w-auto object-contain"
+              />
+            </div>
+          </div>
           <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold mb-4 block">
             CVN Traditional Chikilsa
           </span>
