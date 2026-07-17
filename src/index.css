@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-clinical-white text-obsidian-charcoal antialiased selection:bg-champagne-gold/20 selection:text-obsidian-charcoal;
+    @apply font-sans bg-clinical-white text-obsidian-charcoal antialiased selection:bg-champagne-gold/20 selection:text-obsidian-charcoal leading-[1.7] tracking-[0.015em];
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif text-obsidian-charcoal tracking-wide;

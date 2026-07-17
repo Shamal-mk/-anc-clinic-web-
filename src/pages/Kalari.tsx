@@ -111,7 +111,7 @@ const Kalari = () => {
               <h3 className="text-xl font-serif text-obsidian-charcoal mb-4">Therapeutic Coverage</h3>
               <ul className="space-y-4">
                 {[
-                  'Chronic Low Back Pain & Sciatica',
+                  'Chronic Lower Back Pain & Sciatica',
                   'Sports & Training Injuries',
                   'Post-Fracture Skeletal Alignment',
                   'Rheumatic Arthritis Restorations',

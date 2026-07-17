@@ -24,7 +24,7 @@ const Ayurveda = () => {
       name: 'Dr. Rohini R.',
       specialty: 'AYURVEDIC PHYSICIAN',
       imageSrc: '/doctors/Dr. Rohini.jpeg',
-      focuses: ['Lifestyle Disease Mgmt', 'Skin & Hair Restorations', 'Panchakarma']
+      focuses: ['Lifestyle Disease Management', 'Skin & Hair Restorations', 'Panchakarma']
     },
   ];
 
@@ -44,7 +44,7 @@ const Ayurveda = () => {
             </div>
           </div>
 
-          <h1 className="text-5xl font-serif text-obsidian-charcoal mt-2 mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-obsidian-charcoal mt-2 mb-6 leading-tight break-words px-4">
             Dr. Unnikrishnan's Samsara Ayurveda
           </h1>
           <div className="h-[1px] w-20 bg-sage-green mx-auto mb-6" />
@@ -111,7 +111,7 @@ const Ayurveda = () => {
               { icon: '🌿', label: 'Panchakarma Detox' },
               { icon: '👁️', label: 'Netra Chikitsa (Eye Care)' },
               { icon: '🦴', label: 'Spine & Joint Wellness' },
-              { icon: '🌸', label: "Stri Roga (Women's Health)" },
+              { icon: '🌸', label: "Sthree Roga (Women's Health)" },
               { icon: '🤱', label: 'Post Pregnancy Care' },
               { icon: '💆', label: 'Manasika (Mental Wellness)' },
               { icon: '🧴', label: 'Twach (Skin Care)' },

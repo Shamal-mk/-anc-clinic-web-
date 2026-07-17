@@ -36,7 +36,15 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-champagne-gold mb-5 text-lg">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-sans">
-              <li className="flex gap-2"><span>📍</span><span>Anc wellness, town limit, Kadappakada, kollam, pin : 691004</span></li>
+              <li className="flex gap-2">
+                <span>📍</span>
+                <span className="flex flex-col">
+                  <span>ANC Wellness</span>
+                  <span>Town Limit</span>
+                  <span>Kadappakada</span>
+                  <span>Kollam – 691004</span>
+                </span>
+              </li>
               <li className="flex flex-col gap-1">
                 <div className="flex gap-2">
                   <span>📞</span>

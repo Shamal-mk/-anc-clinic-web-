@@ -94,7 +94,7 @@ const Home = () => {
                 observer.observe(el);
               }}
             >
-              <span className="text-sage-green uppercase tracking-widest text-xs font-semibold">What We Stand For</span>
+
               <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-3 mb-6 leading-snug">
                 Our Mission
               </h2>
@@ -181,8 +181,8 @@ const Home = () => {
               
               <div>
                 <div className="text-3xl mb-4 font-light text-sage-green">02 / 🌿</div>
-                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-sage-green transition-colors duration-300">
-                  Samsara Ayurveda
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-sage-green transition-colors duration-300 break-words leading-tight">
+                  Dr. Unnikrishnan's Samsara Ayurveda
                 </h3>
                 <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
                   Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies 
@@ -241,6 +241,36 @@ const Home = () => {
                 <div className="text-3xl mb-6">{f.icon}</div>
                 <h3 className="font-serif text-obsidian-charcoal text-lg mb-3">{f.title}</h3>
                 <p className="text-obsidian-charcoal/60 text-xs font-sans leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Patient Facilities */}
+      <section className="py-32 bg-[#FAFAFA] border-t border-platinum-slate/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-20">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Our Environment</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient Facilities</h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              { icon: '🛋️', text: 'Comfortable Waiting Area' },
+              { icon: '🩺', text: 'Spacious Consultation Rooms' },
+              { icon: '💊', text: 'Pharmacy' },
+              { icon: '📱', text: 'Digital Appointment Booking' },
+              { icon: '♿', text: 'Wheelchair Accessibility' },
+              { icon: '✨', text: 'Clean Treatment Rooms' },
+              { icon: '👨‍⚕️', text: 'Experienced Medical Team' },
+              { icon: '🔄', text: 'Integrated Healthcare' },
+              { icon: '🅿️', text: 'Parking Facility' },
+              { icon: '🌿', text: 'Hygienic Environment' },
+            ].map((facility, i) => (
+              <div key={i} className="bg-white p-6 rounded-[16px] border border-platinum-slate/25 hover:shadow-md hover:border-champagne-gold/30 transition-all duration-300 flex flex-col items-center text-center group">
+                <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{facility.icon}</div>
+                <p className="text-obsidian-charcoal/80 font-sans text-xs font-semibold leading-relaxed">{facility.text}</p>
               </div>
             ))}
           </div>
