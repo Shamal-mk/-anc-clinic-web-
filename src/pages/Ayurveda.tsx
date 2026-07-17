@@ -112,6 +112,7 @@ const Ayurveda = () => {
               { icon: '👁️', label: 'Netra Chikitsa (Eye Care)' },
               { icon: '🦴', label: 'Spine & Joint Wellness' },
               { icon: '🌸', label: "Stri Roga (Women's Health)" },
+              { icon: '🤱', label: 'Post Pregnancy Care' },
               { icon: '💆', label: 'Manasika (Mental Wellness)' },
               { icon: '🧴', label: 'Twach (Skin Care)' },
               { icon: '🫁', label: 'General Medicine' },
