@@ -97,7 +97,7 @@ const Ayurveda = () => {
             <div className="order-2 md:order-1 relative">
               <div className="aspect-[4/5] rounded-[24px] overflow-hidden shadow-xl border border-platinum-slate/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?q=80&w=1000&auto=format&fit=crop" 
+                  src="/ayurveda_heritage.jpeg" 
                   alt="Traditional Ayurvedic Herbs" 
                   className="w-full h-full object-cover"
                 />
