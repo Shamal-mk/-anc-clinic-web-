@@ -245,21 +245,36 @@ const Cosmetology = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="text-4xl font-serif mb-16">Clinical Results</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group">
-              <img
-                src="/Skin and cosmetology/98DA988A-6C6A-49AE-8F0F-8C2D96072F48.PNG"
-                alt="Clinical result – Treatment 1"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
+            {/* Left Image + Caption */}
+            <div className="flex flex-col text-left">
+              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6">
+                <img
+                  src="/Skin and cosmetology/98DA988A-6C6A-49AE-8F0F-8C2D96072F48.PNG"
+                  alt="Clinical result – Treatment 1"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-2xl font-serif text-white mb-2">Advanced Skin Treatment Suite</h3>
+              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
+                Purposefully designed for precision skin care, comfort, and exceptional clinical outcomes.
+              </p>
             </div>
-            <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group">
-              <img
-                src="/Skin and cosmetology/CB2C1BC0-3CF5-446B-A31C-E353A45E8097.PNG"
-                alt="Clinical result – Treatment 2"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
+
+            {/* Right Image + Caption */}
+            <div className="flex flex-col text-left">
+              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6">
+                <img
+                  src="/Skin and cosmetology/CB2C1BC0-3CF5-446B-A31C-E353A45E8097.PNG"
+                  alt="Clinical result – Treatment 2"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-2xl font-serif text-white mb-2">Personalized Consultation Space</h3>
+              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
+                Every treatment journey begins with an in-depth consultation tailored to your unique skin and wellness goals.
+              </p>
             </div>
           </div>
         </div>
