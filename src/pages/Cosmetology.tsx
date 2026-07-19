@@ -240,10 +240,24 @@ const Cosmetology = () => {
         </div>
       </section>
 
-      {/* 8. Before & After Placeholders */}
+      {/* 8. Facility Image Showcase */}
       <section className="py-24 bg-obsidian-charcoal text-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-4xl font-serif mb-16">Clinical Results</h2>
+
+          {/* Introductory Content Block */}
+          <div className="max-w-3xl mx-auto mb-20">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold mb-5 block">
+              Our Facilities
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
+              Where Science Meets Aesthetic Excellence
+            </h2>
+            <div className="h-[1px] w-16 bg-champagne-gold mx-auto mb-8" />
+            <p className="text-white/70 font-sans font-light leading-relaxed text-base md:text-lg max-w-2xl mx-auto">
+              Every consultation and treatment at ANC begins in a carefully designed clinical environment that reflects our commitment to precision, safety, innovation, and exceptional patient care.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Left Image + Caption */}
             <div className="flex flex-col text-left">
