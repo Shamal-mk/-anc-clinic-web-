@@ -54,12 +54,12 @@ const Cosmetology = () => {
     {
       title: 'Laser Aesthetics',
       desc: 'Precision laser therapy for pigmentation, hair removal, and vascular lesions.',
-      img: 'https://images.unsplash.com/photo-1533095361025-a131f6f1c4df?q=80&w=800&auto=format&fit=crop'
+      img: '/Laser Aesthetics.jpeg'
     },
     {
       title: 'Botox & Dermal Fillers',
       desc: 'Artful injectables to restore volume, contour features, and smooth expression lines.',
-      img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=800&auto=format&fit=crop'
+      img: '/Botox & Dermal Fillers.jpeg'
     }
   ];
 
