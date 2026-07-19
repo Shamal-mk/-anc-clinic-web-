@@ -272,6 +272,49 @@ const Ayurveda = () => {
         </div>
       </section>
 
+      {/* Experience Authentic Ayurveda */}
+      <section className="py-24 bg-obsidian-charcoal text-white border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
+          <h2 className="text-4xl font-serif mb-6">Experience Authentic Ayurveda at ANC</h2>
+          <p className="text-white/60 font-sans font-light mb-16 max-w-2xl mx-auto leading-relaxed">
+            Discover our thoughtfully designed treatment spaces where traditional Kerala Ayurveda is practiced with comfort, precision, and compassionate care.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Left Image + Caption */}
+            <div className="flex flex-col text-left">
+              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6 shadow-xl">
+                <img
+                  src="/Ayurveda/therapy_room.png"
+                  alt="Premium Therapy Room"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-2xl font-serif text-white mb-2">Premium Therapy Room</h3>
+              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
+                A serene and hygienic treatment room designed for authentic Kerala Ayurvedic therapies in a peaceful healing environment.
+              </p>
+            </div>
+
+            {/* Right Image + Caption */}
+            <div className="flex flex-col text-left">
+              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6 shadow-xl">
+                <img
+                  src="/Ayurveda/therapy_session.png"
+                  alt="Authentic Healing in Practice"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-2xl font-serif text-white mb-2">Authentic Healing in Practice</h3>
+              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
+                Traditional Ayurvedic therapies performed with expert care, combining ancient wisdom with a patient-centered approach to holistic wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 8. Consulting Specialists */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
