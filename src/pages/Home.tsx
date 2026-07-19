@@ -203,8 +203,8 @@ const Home = () => {
               <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
               
               <div>
-                <div className="text-3xl mb-8 font-light text-royal-navy flex items-center gap-3">
-                  03 / <img src="/Cvn Kalari Logo.jpg" alt="CVN Kalari Logo" className="h-10 w-10 object-contain rounded-full" />
+                <div className="text-3xl mb-8 font-light text-royal-navy flex items-center gap-4">
+                  03 / <img src="/Cvn Kalari Logo.jpg" alt="CVN Kalari Logo" className="h-20 w-20 object-contain rounded-full shadow-sm" />
                 </div>
                 <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-royal-navy transition-colors duration-300">
                   CVN Kalari Chikilsa
