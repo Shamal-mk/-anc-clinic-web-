@@ -44,12 +44,12 @@ const Cosmetology = () => {
     {
       title: 'Advanced Chemical Peels',
       desc: 'Medical-grade exfoliation for cellular turnover, brightening, and texture refinement.',
-      img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=800&auto=format&fit=crop'
+      img: '/generated/chem_peel.png'
     },
     {
       title: 'PRP & Microneedling',
       desc: 'Harnessing your bodys own growth factors for collagen induction and hair restoration.',
-      img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop'
+      img: '/generated/prp_micro.png'
     },
     {
       title: 'Laser Aesthetics',
