@@ -174,7 +174,7 @@ const Cosmetology = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif text-obsidian-charcoal">The ANC Journey</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-obsidian-charcoal">The Clinical Pathway</h2>
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-4 relative">

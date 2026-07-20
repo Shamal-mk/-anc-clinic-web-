@@ -30,15 +30,15 @@ const Ayurveda = () => {
   ];
 
   const panchakarma = [
-    { title: 'Abhyangam', icon: '🌿', desc: 'Rhythmic warm herbal oil massage to release deep-seated toxins and improve circulation.' },
-    { title: 'Shirodhara', icon: '💧', desc: 'Continuous pouring of warm medicated oil on the forehead for profound neurological relaxation.' },
-    { title: 'Pizhichil', icon: '🔥', desc: 'Luxurious therapy involving the continuous pouring of warm herbal oils over the entire body.' },
-    { title: 'Njavarakizhi', icon: '🍚', desc: 'Fomentation with special rice puddings to strengthen muscles and rejuvenate the nervous system.' },
-    { title: 'Elakizhi', icon: '🍃', desc: 'Massage with herbal leaf bundles to relieve joint pain, arthritis, and muscle stiffness.' },
-    { title: 'Udwarthanam', icon: '✨', desc: 'Vigorously applied dry herbal powder massage, excellent for weight management and toning.' },
-    { title: 'Nasya', icon: '👃', desc: 'Instillation of herbal oils through the nasal passages to cleanse the head and neck regions.' },
-    { title: 'Vasti', icon: '⚕️', desc: 'Medicated enema therapy, considered the mother of all treatments for complete detoxification.' },
-    { title: 'Thalapothichil', icon: '🧠', desc: 'Cooling herbal head pack to calm the mind, relieve stress, and treat scalp conditions.' },
+    { title: 'Abhyangam', icon: 'oil', desc: 'Rhythmic warm herbal oil massage to release deep-seated toxins and improve circulation.' },
+    { title: 'Shirodhara', icon: 'pour', desc: 'Continuous pouring of warm medicated oil on the forehead for profound neurological relaxation.' },
+    { title: 'Pizhichil', icon: 'warmth', desc: 'Luxurious therapy involving the continuous pouring of warm herbal oils over the entire body.' },
+    { title: 'Njavarakizhi', icon: 'bundle', desc: 'Fomentation with special rice puddings to strengthen muscles and rejuvenate the nervous system.' },
+    { title: 'Elakizhi', icon: 'herb', desc: 'Massage with herbal leaf bundles to relieve joint pain, arthritis, and muscle stiffness.' },
+    { title: 'Udwarthanam', icon: 'powder', desc: 'Vigorously applied dry herbal powder massage, excellent for weight management and toning.' },
+    { title: 'Nasya', icon: 'nasal', desc: 'Instillation of herbal oils through the nasal passages to cleanse the head and neck regions.' },
+    { title: 'Vasti', icon: 'vessel', desc: 'Medicated enema therapy, considered the mother of all treatments for complete detoxification.' },
+    { title: 'Thalapothichil', icon: 'headpack', desc: 'Cooling herbal head pack to calm the mind, relieve stress, and treat scalp conditions.' },
   ];
 
   const specialties = [
@@ -146,7 +146,35 @@ const Ayurveda = () => {
               <div key={i} className="group bg-white rounded-2xl p-8 border border-platinum-slate/20 hover:shadow-xl hover:border-sage-green/30 transition-all duration-500 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-sage-green/5 rounded-bl-[100px] -z-0 transition-transform duration-500 group-hover:scale-110" />
                 <div className="relative z-10">
-                  <div className="text-4xl mb-6 transform group-hover:-translate-y-2 transition-transform duration-500">{therapy.icon}</div>
+                  <div className="w-10 h-10 mb-6 text-sage-green transform group-hover:-translate-y-2 transition-transform duration-500">
+                    {therapy.icon === 'oil' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2c0 0-6 5.686-6 10a6 6 0 0 0 12 0c0-4.314-6-10-6-10z"/><path d="M12 12v4"/><path d="M10 14h4"/></svg>
+                    )}
+                    {therapy.icon === 'pour' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 3h10"/><path d="M12 3v4"/><path d="M8 7c0 0-2 2-2 6s2 6 2 6"/><path d="M16 7c0 0 2 2 2 6s-2 6-2 6"/><path d="M8 19h8"/><path d="M12 7v12"/><path d="M10 12l2 2 2-2"/></svg>
+                    )}
+                    {therapy.icon === 'warmth' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 4-5 11-5 11S7 11 7 7a5 5 0 0 1 5-5z"/><path d="M3 20c3-2 6-3 9-3s6 1 9 3"/><circle cx="12" cy="7" r="2"/></svg>
+                    )}
+                    {therapy.icon === 'bundle' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="10" rx="6" ry="3"/><path d="M6 10c0 4 2.686 7 6 7s6-3 6-7"/><path d="M9 7c0-2 1.343-4 3-4s3 2 3 4"/><path d="M12 17v4"/><path d="M9 20h6"/></svg>
+                    )}
+                    {therapy.icon === 'herb' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    )}
+                    {therapy.icon === 'powder' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18"/><path d="M7 6V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2"/><path d="M8 6l1 12h6l1-12"/><path d="M10 10h4"/><path d="M10 14h4"/></svg>
+                    )}
+                    {therapy.icon === 'nasal' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2c-2 0-4 2-4 5v7c0 2 1 3 2 4l2 2 2-2c1-1 2-2 2-4V7c0-3-2-5-4-5z"/><path d="M8 14c-2 1-3 3-3 4"/><path d="M16 14c2 1 3 3 3 4"/><circle cx="12" cy="8" r="1.5"/></svg>
+                    )}
+                    {therapy.icon === 'vessel' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 8h16l-2 10H6L4 8z"/><path d="M2 8h20"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/><path d="M10 13h4"/><path d="M12 11v4"/></svg>
+                    )}
+                    {therapy.icon === 'headpack' && (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="10" r="6"/><path d="M6 10C6 7 8 4 12 4s6 3 6 6"/><path d="M6 10c0 0-2 1-2 3s2 3 2 3"/><path d="M18 10c0 0 2 1 2 3s-2 3-2 3"/><path d="M10 16v4"/><path d="M14 16v4"/><path d="M8 20h8"/></svg>
+                    )}
+                  </div>
                   <h3 className="text-2xl font-serif text-obsidian-charcoal mb-3">{therapy.title}</h3>
                   <p className="text-obsidian-charcoal/70 font-sans font-light leading-relaxed text-sm">{therapy.desc}</p>
                 </div>
