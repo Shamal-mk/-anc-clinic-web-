@@ -222,6 +222,15 @@ const Home = () => {
               className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:translate-y-6 hover:border-royal-navy/40 overflow-hidden"
             >
               <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+
+              {/* CVN Kalari Logo — same pattern as card 2 */}
+              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+                <img
+                  src="/Cvn Kalari Logo.jpg"
+                  alt="CVN Kalari Logo"
+                  className="h-16 w-auto object-contain"
+                />
+              </div>
               
               <div>
                 <div className="flex items-center gap-3 mb-8 font-light text-royal-navy text-3xl">
