@@ -1,5 +1,12 @@
+import SkinHero from '../components/skin/SkinHero';
+import SkinIntro from '../components/skin/SkinIntro';
+import ConcernGrid from '../components/skin/ConcernGrid';
+import TreatmentGrid from '../components/skin/TreatmentGrid';
+import LayerMethodology from '../components/skin/LayerMethodology';
+import Consultation from '../components/skin/Consultation';
+import FAQ from '../components/skin/FAQ';
+import CTA from '../components/skin/CTA';
 import DoctorProfile from '../components/DoctorProfile';
-import { Link } from 'react-router-dom';
 
 const Cosmetology = () => {
   const doctors = [
@@ -29,208 +36,34 @@ const Cosmetology = () => {
     },
   ];
 
-  const concerns = [
-    { label: 'Acne & Acne Scars', icon: '✨' },
-    { label: 'Pigmentation & Melasma', icon: '🌑' },
-    { label: 'Hair Loss & Thinning', icon: '🧬' },
-    { label: 'Anti-Ageing & Wrinkles', icon: '⏳' },
-    { label: 'Dull & Tired Skin', icon: '💫' },
-    { label: 'Large Pores', icon: '🔍' },
-    { label: 'Rosacea & Sensitive Skin', icon: '🌸' },
-    { label: 'Skin Tightening', icon: '🔄' },
-  ];
-
-  const treatments = [
-    {
-      title: 'Advanced Chemical Peels',
-      desc: 'Medical-grade exfoliation for cellular turnover, brightening, and texture refinement.',
-      img: '/generated/chem_peel.png'
-    },
-    {
-      title: 'PRP & Microneedling',
-      desc: 'Harnessing your bodys own growth factors for collagen induction and hair restoration.',
-      img: '/generated/prp_micro.png'
-    },
-    {
-      title: 'Laser Aesthetics',
-      desc: 'Precision laser therapy for pigmentation, hair removal, and vascular lesions.',
-      img: '/Laser Aesthetics.jpeg'
-    },
-    {
-      title: 'Botox & Dermal Fillers',
-      desc: 'Artful injectables to restore volume, contour features, and smooth expression lines.',
-      img: '/Botox & Dermal Fillers.jpeg'
-    }
-  ];
-
-  const features = [
-    'Personalised Consultation',
-    'Evidence-Based Treatments',
-    'Integrated Healthcare',
-    'Certified Specialists',
-    'Modern Technology',
-    'Long-term Skin Wellness',
-    'Individual Treatment Plans',
-    'Ethical Medical Care'
-  ];
-
   return (
-    <div className="pt-24 min-h-screen bg-clinical-white">
+    <div className="min-h-screen bg-clinical-white selection:bg-sage-green selection:text-white">
       
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-royal-navy/5 via-transparent to-transparent py-28 px-6">
-        <div className="max-w-4xl mx-auto text-center z-10 relative animate-fade-in-up">
-          <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold mb-6 block">ANC Premium Dermatology</span>
-          <h1 className="text-5xl md:text-7xl font-serif text-obsidian-charcoal mb-8 leading-tight">
-            Skin & Cosmetology
-          </h1>
-          <p className="text-lg md:text-xl text-obsidian-charcoal/70 font-sans font-light leading-relaxed max-w-2xl mx-auto">
-            Evidence-based skin, hair and aesthetic care designed around your unique concerns.
-          </p>
-        </div>
-      </section>
+      <SkinHero />
 
-      {/* 2. Concern-Based Navigation */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif text-obsidian-charcoal mb-4">What concerns you today?</h2>
-            <div className="h-[1px] w-16 bg-champagne-gold mx-auto" />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {concerns.map((concern, i) => (
-              <div key={i} className="group bg-clinical-white border border-platinum-slate/30 rounded-2xl p-6 hover:shadow-lg hover:border-champagne-gold/40 transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                <span className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-500">{concern.icon}</span>
-                <h3 className="font-sans text-sm font-semibold text-obsidian-charcoal/90">{concern.label}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 2. Introduction */}
+      <SkinIntro />
 
-      {/* 3. Advanced Diagnostics */}
-      <section className="py-24 bg-obsidian-charcoal text-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="animate-fade-in-up">
-              <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold mb-4 block">The Science of Skin</span>
-              <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight">Modern Skin Analysis</h2>
-              <p className="text-white/70 font-sans font-light leading-relaxed mb-8">
-                We believe exceptional results begin with profound understanding. Our advanced diagnostic protocols go beyond the surface to identify the root cause of your aesthetic concerns.
-              </p>
-              <ul className="space-y-4">
-                {['Comprehensive Skin Assessment', 'Scalp & Hair Follicle Analysis', 'Lifestyle & Dietary Evaluation', 'Thorough Medical History', 'Customized Follow-up Planning'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm font-sans text-white/80">
-                    <span className="w-1.5 h-1.5 rounded-full bg-champagne-gold flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Modern skin analysis" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 3. Skin Concerns (Identify) */}
+      <ConcernGrid />
 
-      {/* 4. Treatment Showcase */}
-      <section className="py-32 bg-[#FAFAFA]">
+      {/* 4. Treatments (Resolve) */}
+      <TreatmentGrid />
+
+      {/* 5. Layered Methodology (Treating the Cause) */}
+      <LayerMethodology />
+
+      {/* 6. Consultation */}
+      <Consultation />
+
+      {/* 7. Retained: Consulting Specialists */}
+      <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="text-center mb-20">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold block mb-4">Curated Aesthetics</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mb-6">Premium Treatments</h2>
-            <div className="h-[1px] w-16 bg-champagne-gold mx-auto" />
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {treatments.map((treatment, i) => (
-              <div key={i} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-700 border border-platinum-slate/20">
-                <div className="aspect-[16/9] overflow-hidden relative">
-                  <div className="absolute inset-0 bg-obsidian-charcoal/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                  <img 
-                    src={treatment.img} 
-                    alt={treatment.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
-                  />
-                </div>
-                <div className="p-8 md:p-10">
-                  <h3 className="text-2xl font-serif text-obsidian-charcoal mb-3">{treatment.title}</h3>
-                  <p className="text-obsidian-charcoal/70 font-sans font-light leading-relaxed">{treatment.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Patient Journey Timeline */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-serif text-obsidian-charcoal">The Clinical Pathway</h2>
-          </div>
-          
-          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-4 relative">
-            {/* Connecting Line (Desktop) */}
-            <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-platinum-slate/50 z-0" />
-            
-            {[
-              { num: '01', title: 'Consultation' },
-              { num: '02', title: 'Skin Analysis' },
-              { num: '03', title: 'Diagnosis' },
-              { num: '04', title: 'Treatment Plan' },
-              { num: '05', title: 'Follow-up Care' },
-            ].map((step, i) => (
-              <div key={i} className="relative z-10 flex flex-col items-center text-center group w-full md:w-1/5">
-                <div className="w-24 h-24 rounded-full bg-clinical-white border-2 border-platinum-slate flex items-center justify-center mb-6 group-hover:border-champagne-gold group-hover:shadow-lg transition-all duration-500 bg-white">
-                  <span className="font-serif text-2xl text-champagne-gold">{step.num}</span>
-                </div>
-                <h3 className="font-sans text-sm font-semibold text-obsidian-charcoal uppercase tracking-widest">{step.title}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Why Choose ANC */}
-      <section className="py-24 bg-[#FAFAFA] border-y border-platinum-slate/20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
-            <div className="lg:col-span-1">
-              <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mb-6 leading-tight">Why Choose ANC Aesthetics?</h2>
-              <p className="text-obsidian-charcoal/70 font-sans font-light leading-relaxed mb-8">
-                We combine the ethical foundation of medical science with the refined elegance of luxury wellness.
-              </p>
-            </div>
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-              {features.map((feature, i) => (
-                <div key={i} className="bg-white p-6 rounded-2xl border border-platinum-slate/20 flex items-center gap-4 hover:shadow-md transition-shadow duration-300">
-                  <span className="w-8 h-8 rounded-full bg-sage-green/10 flex items-center justify-center text-sage-green flex-shrink-0">
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  <span className="font-sans text-sm font-semibold text-obsidian-charcoal/80">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. Consulting Specialists */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-20">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold block mb-4">The Experts</span>
-            <h2 className="text-4xl font-serif text-obsidian-charcoal">Medical Specialists</h2>
+            <span className="text-champagne-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-4">The Experts</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal">Medical Specialists</h2>
+            <div className="h-[1px] w-16 bg-champagne-gold mx-auto mt-6" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {doctors.map((doc) => (
@@ -240,63 +73,13 @@ const Cosmetology = () => {
         </div>
       </section>
 
-      {/* 8. Facility Image Showcase */}
-      <section className="py-24 bg-obsidian-charcoal text-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
-
-          {/* Introductory Content Block */}
-          <div className="max-w-3xl mx-auto mb-20">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold mb-5 block">
-              Our Facilities
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
-              Where Science Meets Aesthetic Excellence
-            </h2>
-            <div className="h-[1px] w-16 bg-champagne-gold mx-auto mb-8" />
-            <p className="text-white/70 font-sans font-light leading-relaxed text-base md:text-lg max-w-2xl mx-auto">
-              Every consultation and treatment at ANC begins in a carefully designed clinical environment that reflects our commitment to precision, safety, innovation, and exceptional patient care.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Left Image + Caption */}
-            <div className="flex flex-col text-left">
-              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6">
-                <img
-                  src="/Skin and cosmetology/98DA988A-6C6A-49AE-8F0F-8C2D96072F48.PNG"
-                  alt="Clinical result – Treatment 1"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="text-2xl font-serif text-white mb-2">Advanced Skin Treatment Suite</h3>
-              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
-                Purposefully designed for precision skin care, comfort, and exceptional clinical outcomes.
-              </p>
-            </div>
-
-            {/* Right Image + Caption */}
-            <div className="flex flex-col text-left">
-              <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6">
-                <img
-                  src="/Skin and cosmetology/CB2C1BC0-3CF5-446B-A31C-E353A45E8097.PNG"
-                  alt="Clinical result – Treatment 2"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="text-2xl font-serif text-white mb-2">Personalized Consultation Space</h3>
-              <p className="text-white/60 font-sans font-light text-sm leading-relaxed">
-                Every treatment journey begins with an in-depth consultation tailored to your unique skin and wellness goals.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. Testimonials */}
-      <section className="py-24 bg-white">
+      {/* 8. Retained: Testimonials */}
+      <section className="py-24 bg-[#FAFAFA] border-y border-platinum-slate/20">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-16">
+            <span className="text-champagne-gold uppercase tracking-[0.2em] text-xs font-semibold block mb-4">Experiences</span>
+            <h2 className="text-4xl font-serif text-obsidian-charcoal">Patient Stories</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -315,7 +98,7 @@ const Cosmetology = () => {
                 treatment: "Scar Revision"
               }
             ].map((review, i) => (
-              <div key={i} className="bg-[#FAFAFA] p-10 rounded-3xl relative overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div key={i} className="bg-white p-10 rounded-3xl relative overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-platinum-slate/20">
                 <span className="text-8xl font-serif text-champagne-gold/10 absolute -top-4 -left-2 select-none">"</span>
                 <p className="font-sans font-light text-obsidian-charcoal/80 leading-relaxed mb-8 relative z-10 mt-4">
                   {review.text}
@@ -330,7 +113,7 @@ const Cosmetology = () => {
                       <svg className="w-3 h-3 text-sage-green" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      Verified Patient — {review.treatment}
+                      Verified Patient
                     </span>
                   </div>
                 </div>
@@ -340,21 +123,11 @@ const Cosmetology = () => {
         </div>
       </section>
 
-      {/* 10. CTA */}
-      <section className="py-32 bg-obsidian-charcoal text-white text-center">
-        <div className="max-w-4xl mx-auto px-6 sm:px-8">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-tight">Begin Your Journey</h2>
-          <p className="text-lg text-white/70 font-sans font-light mb-10 max-w-2xl mx-auto leading-relaxed">
-            Schedule a comprehensive skin assessment with our experts and discover your personalized pathway to optimal skin health.
-          </p>
-          <Link 
-            to="/booking"
-            className="inline-block bg-champagne-gold text-obsidian-charcoal font-sans text-sm font-semibold tracking-widest uppercase px-10 py-5 rounded-full hover:bg-white transition-colors duration-300"
-          >
-            Book Consultation
-          </Link>
-        </div>
-      </section>
+      {/* 9. FAQ Section */}
+      <FAQ />
+
+      {/* 10. Final CTA */}
+      <CTA />
 
     </div>
   );
