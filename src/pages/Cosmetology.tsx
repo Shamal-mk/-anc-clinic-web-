@@ -1,3 +1,4 @@
+import ClinicShowcase from '../components/skin/ClinicShowcase';
 import SkinHero from '../components/skin/SkinHero';
 import SkinIntro from '../components/skin/SkinIntro';
 import ExploreGrid from '../components/skin/ExploreGrid';
@@ -44,6 +45,9 @@ const Cosmetology = () => {
 
       {/* 2. Introduction */}
       <SkinIntro />
+
+            {/* Clinic Showcase */}
+      <ClinicShowcase />
 
       {/* 3. Skin Concerns (Identify) */}
       <ExploreGrid />
