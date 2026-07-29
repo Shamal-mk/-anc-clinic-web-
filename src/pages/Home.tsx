@@ -54,7 +54,7 @@ const Home = () => {
                 <Image
                   src="/logos/Skin & Cosmetology Logo.png"
                   alt="Skin & Cosmetology Logo"
-                  className="h-16 w-auto object-contain mix-blend-multiply"
+                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
                 />
               </div>
 
@@ -89,7 +89,7 @@ const Home = () => {
                 <Image
                   src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
                   alt="Saṃsāra Ayurveda Unit Logo"
-                  className="h-16 w-auto object-contain mix-blend-multiply"
+                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
                 />
               </div>
 
@@ -126,7 +126,7 @@ const Home = () => {
                 <Image
                   src="/logos/Cvn Kalari Logo.jpg"
                   alt="CVN Kalari Logo"
-                  className="h-16 w-auto object-contain mix-blend-multiply"
+                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
                 />
               </div>
               
