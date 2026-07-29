@@ -41,12 +41,6 @@ const TreatmentCategoryCard = ({ title, description, image, treatments }: Treatm
           ))}
         </div>
         
-        <div className="mt-auto pt-6 border-t border-platinum-slate/20">
-          <button className="inline-flex items-center gap-3 text-champagne-gold font-sans text-xs font-bold tracking-[0.2em] uppercase group/btn">
-            Learn More
-            <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-2 transition-transform duration-300" />
-          </button>
-        </div>
       </div>
     </motion.div>
   );
