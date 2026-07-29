@@ -17,8 +17,9 @@ const concerns = [
   {
     title: 'Dullness',
     description: 'Rough texture, dullness, enlarged pores or skin that looks tired despite a consistent skincare routine.',
-    image: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop',
-    link: '#dullness'
+    image: '/skin/dullness.png',
+    link: '#dullness',
+    alt: 'Dullness Skin Concern'
   },
   {
     title: 'Ageing',

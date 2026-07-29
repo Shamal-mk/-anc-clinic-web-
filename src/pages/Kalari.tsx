@@ -1,4 +1,5 @@
 import DoctorProfile from '../components/DoctorProfile';
+import { Image } from '../components/Image';
 
 const Kalari = () => {
   const doctors = [
@@ -27,7 +28,7 @@ const Kalari = () => {
         <div className="relative max-w-7xl mx-auto text-center z-10 animate-fade-in-up flex flex-col items-center">
           <div className="mb-10 inline-flex justify-center">
             <div className="bg-white rounded-[20px] shadow-lg p-6 border border-white/20 inline-block">
-              <img
+              <Image
                 src="/logos/Cvn Kalari Logo.jpg"
                 alt="CVN Kalari Official Logo"
                 className="h-32 md:h-40 w-auto object-contain"
@@ -55,7 +56,7 @@ const Kalari = () => {
             
             <div className="flex flex-col group will-change-transform hover:-translate-y-4 transition-transform duration-1000 ease-out">
               <div className="w-full aspect-[4/5] overflow-hidden rounded-[2px] shadow-2xl border border-white/10">
-                <img 
+                <Image 
                   src="/Kalari/186E95DA-06E2-419C-AAD9-D7B672E3ED6D.PNG" 
                   alt="Dynamic Motion - Kalaripayattu" 
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
@@ -70,7 +71,7 @@ const Kalari = () => {
 
             <div className="flex flex-col group will-change-transform translate-y-0 md:translate-y-16 hover:translate-y-12 transition-transform duration-1000 ease-out">
               <div className="w-full aspect-[4/5] overflow-hidden rounded-[2px] shadow-2xl border border-white/10">
-                <img 
+                <Image 
                   src="/Kalari/2CB1B5AE-3058-455C-AFA2-F4CBB61C9308.PNG" 
                   alt="Restorative Calmness - Marma Healing" 
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"

@@ -13,7 +13,7 @@ const Testimonials = () => {
     },
     {
       name: 'Rajan M.',
-      dept: 'Samsara Ayurveda',
+      dept: 'Saṃsāra Ayurveda',
       doctor: 'Dr. Sreelatha',
       text: 'The Panchakarma therapy restored a quality of life I had lost. Under Dr. Sreelatha\'s guidance, the custom herbal protocols resolved my chronic inflammation at its source.',
       rating: 5,

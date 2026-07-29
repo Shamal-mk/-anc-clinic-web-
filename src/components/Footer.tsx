@@ -7,7 +7,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-1">
-            <img src="/logos/ANC Logo.jpeg" alt="ANC Clinic" className="h-16 w-auto rounded-xl mb-4 bg-white p-1" />
+            <div className="inline-flex flex-col items-center bg-white p-1 rounded-xl mb-4">
+              <img src="/logos/ANC Logo.jpeg" alt="ANC Clinic" className="h-16 w-auto" />
+              <span className="text-[#48494B] font-medium text-[16px] tracking-widest leading-none mb-1 font-sans">wellness</span>
+            </div>
             <p className="text-gray-400 text-sm font-sans leading-relaxed">
               ANC (Anoop Newlifecare) Clinic — where premium healthcare meets compassionate healing.
             </p>
@@ -18,7 +21,7 @@ const Footer = () => {
             <h4 className="font-serif text-champagne-gold mb-5 text-lg">Departments</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-sans">
               <li><Link to="/departments/cosmetology" className="hover:text-white transition-colors">Skin & Cosmetology</Link></li>
-              <li><Link to="/departments/ayurveda" className="hover:text-white transition-colors">Samsara Ayurveda</Link></li>
+              <li><Link to="/departments/ayurveda" className="hover:text-white transition-colors">Saṃsāra Ayurveda</Link></li>
               <li><Link to="/departments/kalari" className="hover:text-white transition-colors">CVN Kalari</Link></li>
             </ul>
           </div>
@@ -38,12 +41,12 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-400 text-sm font-sans">
               <li className="flex gap-2">
                 <span>📍</span>
-                <span className="flex flex-col">
+                <a href="https://maps.app.goo.gl/onQm2HPkjcwb4V3c8?g_st=iw" target="_blank" rel="noopener noreferrer" className="flex flex-col hover:text-white transition-colors">
                   <span>ANC Wellness</span>
                   <span>Town Limit</span>
                   <span>Kadappakada</span>
                   <span>Kollam – 691004</span>
-                </span>
+                </a>
               </li>
               <li className="flex flex-col gap-1">
                 <div className="flex gap-2">

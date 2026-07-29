@@ -1,4 +1,5 @@
 import DoctorProfile from '../components/DoctorProfile';
+import { Image } from '../components/Image';
 import { Link } from 'react-router-dom';
 
 const Ayurveda = () => {
@@ -73,15 +74,15 @@ const Ayurveda = () => {
         <div className="max-w-4xl mx-auto text-center z-10 relative animate-fade-in-up">
           <div className="flex justify-center mb-8">
             <div className="bg-white rounded-[20px] shadow-md p-8 border border-platinum-slate/20 inline-block">
-              <img
+              <Image
                 src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
-                alt="Dr. Unnikrishnan's Samsara Ayurveda Unit Logo"
+                alt="Dr. Unnikrishnan's Saṃsāra Ayurveda Unit Logo"
                 className="h-28 md:h-36 lg:h-40 w-auto object-contain"
               />
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif text-obsidian-charcoal mb-6 leading-tight break-words px-4">
-            Dr. Unnikrishnan's Samsara Ayurveda
+            Dr. Unnikrishnan's Saṃsāra Ayurveda
           </h1>
           <div className="h-[1px] w-20 bg-sage-green mx-auto mb-8" />
           <p className="text-lg md:text-xl text-obsidian-charcoal/80 font-sans font-light leading-relaxed max-w-3xl mx-auto">
@@ -96,7 +97,7 @@ const Ayurveda = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
               <div className="aspect-[4/5] rounded-[24px] overflow-hidden shadow-xl border border-platinum-slate/20">
-                <img 
+                <Image 
                   src="/ayurveda_heritage.jpeg" 
                   alt="Traditional Ayurvedic Herbs" 
                   className="w-full h-full object-cover"
@@ -145,7 +146,7 @@ const Ayurveda = () => {
             {panchakarma.map((therapy, i) => (
               <div key={i} className="group bg-white rounded-2xl border border-platinum-slate/20 hover:shadow-xl hover:border-sage-green/30 transition-all duration-500 flex flex-col h-full overflow-hidden">
                 <div className="w-full h-56 sm:h-64 overflow-hidden relative bg-platinum-slate/10">
-                  <img
+                  <Image
                     src={`/treatments/${therapy.title}.png`}
                     alt={therapy.title}
                     loading="lazy"
@@ -217,7 +218,7 @@ const Ayurveda = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Herbal Medicine */}
             <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto md:min-h-[520px]">
-              <img 
+              <Image 
                 src="/Traditional Formulations.jpeg" 
                 alt="Ayurvedic Oils" 
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -234,7 +235,7 @@ const Ayurveda = () => {
 
             {/* Patient Experience */}
             <div className="group relative overflow-hidden rounded-[24px] shadow-lg aspect-square md:aspect-auto md:min-h-[520px]">
-              <img 
+              <Image 
                 src="/A Sanctuary of Peace.jpeg" 
                 alt="Calm healing environment" 
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -289,7 +290,7 @@ const Ayurveda = () => {
             {/* Left Image + Caption */}
             <div className="flex flex-col text-left">
               <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6 shadow-xl">
-                <img
+                <Image
                   src="/Ayurveda/therapy_room.png"
                   alt="Premium Therapy Room"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -305,7 +306,7 @@ const Ayurveda = () => {
             {/* Right Image + Caption */}
             <div className="flex flex-col text-left">
               <div className="aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden group mb-6 shadow-xl">
-                <img
+                <Image
                   src="/Ayurveda/therapy_session.png"
                   alt="Authentic Healing in Practice"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"

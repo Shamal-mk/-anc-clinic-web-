@@ -11,17 +11,18 @@ const SkinIntro = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal leading-tight mb-8">
-              Your skin is the first thing the world sees and the last thing most people truly understand.
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal leading-[1.2] mb-6">
+              Advanced Skin & Cosmetology Solutions
             </h2>
+            <div className="h-[1px] w-20 bg-champagne-gold mb-8" />
             <p className="text-obsidian-charcoal/70 font-sans font-light leading-relaxed text-lg mb-8">
-              It reacts to stress, hormones, diet, environment and climate, all at once. At ANC Aesthetics, the Skin Department exists for one reason: to make sense of what is happening beneath the surface and address it properly.
+              At ANC Aesthetics, we redefine dermatological excellence. Our clinic seamlessly blends clinical precision with a world-class luxury experience, delivering bespoke, evidence-based treatments designed to restore your skin’s inherent health and vitality.
             </p>
             <div className="flex items-center gap-6">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-widest text-obsidian-charcoal mb-1">Not sure about your concern?</p>
                 <div className="flex gap-4">
-                  <a href="/booking" className="text-champagne-gold hover:text-obsidian-charcoal transition-colors underline underline-offset-4 text-sm font-semibold">Talk to an expert</a>
+                  <a href="https://wa.me/919074146088" target="_blank" rel="noopener noreferrer" className="text-champagne-gold hover:text-obsidian-charcoal transition-colors underline underline-offset-4 text-sm font-semibold">WhatsApp Consultation</a>
                   <a href="/booking" className="text-champagne-gold hover:text-obsidian-charcoal transition-colors underline underline-offset-4 text-sm font-semibold">Book a consultation</a>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import { Image } from '../components/Image';
 import Testimonials from '../components/Testimonials';
 import { Link } from 'react-router-dom';
 
@@ -25,6 +26,162 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+
+      {/* Asymmetric Three-Unit Matrix */}
+      <section id="departments" className="py-32 bg-white relative">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          
+          <div className="text-center mb-24">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">
+              Clinical Zoning
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">
+              Three Pillars of Integrity
+            </h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
+            
+            {/* Unit Card 1: Cosmetology - Alternating depth: Normal */}
+            <Link
+              to="/departments/cosmetology"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-champagne-gold/40 overflow-hidden"
+            >
+              {/* Embedded High-Fidelity Header Logo */}
+              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+                <Image
+                  src="/logos/Skin & Cosmetology Logo.png"
+                  alt="Skin & Cosmetology Logo"
+                  className="h-16 w-auto object-contain mix-blend-multiply"
+                />
+              </div>
+
+              {/* Parallax Background Glow */}
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-champagne-gold/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              
+              <div>
+                <div className="flex items-center gap-3 mb-8 font-light text-champagne-gold text-3xl">
+                  01 /
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-1a6 6 0 0 1 12 0v1"/><path d="M9 12.5c-.5 1-.5 2.5 0 3.5"/><path d="M15 12.5c.5 1 .5 2.5 0 3.5"/></svg>
+                </div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-champagne-gold transition-colors duration-300">
+                  Skin & Cosmetology
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Experience world-class reconstructive, clinical dermatology, and facial rejuvenation treatments where precise medical care meets aesthetic mastery.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-champagne-gold font-semibold">
+                Explore Aesthetics Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
+            {/* Unit Card 2: Saṃsāra Ayurveda - Alternating depth: Offset Upwards */}
+            <Link
+              to="/departments/ayurveda"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 lg:-translate-y-6 hover:border-sage-green/40 overflow-hidden"
+            >
+              {/* Embedded High-Fidelity Header Logo */}
+              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+                <Image
+                  src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
+                  alt="Saṃsāra Ayurveda Unit Logo"
+                  className="h-16 w-auto object-contain mix-blend-multiply"
+                />
+              </div>
+
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-sage-green/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              
+              <div>
+                <div className="flex items-center gap-3 mb-4 font-light text-sage-green text-3xl">
+                  02 /
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                </div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-sage-green transition-colors duration-300 break-words leading-tight">
+                  Dr. Unnikrishnan's Saṃsāra Ayurveda
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies 
+                  and ancient remedies customized to optimize system balance.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-sage-green font-semibold">
+                Explore Ayurveda Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
+            {/* Unit Card 3: CVN Kalari - Alternating depth: Offset Downwards */}
+            <Link
+              to="/departments/kalari"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:translate-y-6 hover:border-royal-navy/40 overflow-hidden"
+            >
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+
+              {/* CVN Kalari Logo — same pattern as card 2 */}
+              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+                <Image
+                  src="/logos/Cvn Kalari Logo.jpg"
+                  alt="CVN Kalari Logo"
+                  className="h-16 w-auto object-contain mix-blend-multiply"
+                />
+              </div>
+              
+              <div>
+                <div className="flex items-center gap-3 mb-8 font-light text-royal-navy text-3xl">
+                  03 /
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 17l9 5 9-5"/><path d="M3 12l9 5 9-5"/></svg>
+                </div>
+                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-royal-navy transition-colors duration-300">
+                  CVN Kalari Chikilsa
+                </h3>
+                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
+                  Traditional Marma point therapy and orthopaedic treatments derived from Kalaripayattu systems. 
+                  Designed to restore skeletal flow and muscular strength.
+                </p>
+              </div>
+
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-royal-navy font-semibold">
+                Explore Kalari Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </div>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-32 bg-clinical-white border-t border-platinum-slate/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-20">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Clinical Standards</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient-Centric Philosophies</h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: 'gem', title: 'World-Class Faculty', desc: 'Elite practitioners with global standards and decades of hands-on expertise.' },
+              { icon: 'zone', title: 'Contextual Zoning', desc: 'Distinct care zones configured specifically to their respective scientific systems.' },
+              { icon: 'leaf2', title: 'Integrative Protocols', desc: 'Merging cutting-edge medical technologies with ancient wisdom.' },
+              { icon: 'lock', title: 'Private Consultations', desc: 'Absolute confidentiality with one-on-one tailored restorative programs.' },
+            ].map((f) => (
+              <div key={f.title} className="bg-white p-8 rounded-[20px] border border-platinum-slate/20 hover:shadow-lg transition-all duration-300">
+                <div className="w-8 h-8 mb-6 text-champagne-gold">
+                  {f.icon === 'gem' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
+                  {f.icon === 'zone' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>)}
+                  {f.icon === 'leaf2' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>)}
+                  {f.icon === 'lock' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>)}
+                </div>
+                <h3 className="font-serif text-obsidian-charcoal text-lg mb-3">{f.title}</h3>
+                <p className="text-obsidian-charcoal/60 text-xs font-sans leading-relaxed">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Founder's Message & Mission */}
       <section
@@ -135,152 +292,6 @@ const Home = () => {
               </div>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* Asymmetric Three-Unit Matrix */}
-      <section id="departments" className="py-32 bg-white relative">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          
-          <div className="text-center mb-24">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">
-              Clinical Zoning
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">
-              Three Pillars of Integrity
-            </h2>
-            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
-            
-            {/* Unit Card 1: Cosmetology - Alternating depth: Normal */}
-            <Link
-              to="/departments/cosmetology"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-champagne-gold/40 overflow-hidden"
-            >
-              {/* Parallax Background Glow */}
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-champagne-gold/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
-              
-              <div>
-                <div className="flex items-center gap-3 mb-8 font-light text-champagne-gold text-3xl">
-                  01 /
-                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-1a6 6 0 0 1 12 0v1"/><path d="M9 12.5c-.5 1-.5 2.5 0 3.5"/><path d="M15 12.5c.5 1 .5 2.5 0 3.5"/></svg>
-                </div>
-                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-champagne-gold transition-colors duration-300">
-                  Skin & Cosmetology
-                </h3>
-                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
-                  Experience world-class reconstructive, clinical dermatology, and facial rejuvenation treatments where precise medical care meets aesthetic mastery.
-                </p>
-              </div>
-
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-champagne-gold font-semibold">
-                Explore Aesthetics Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
-              </div>
-            </Link>
-
-            {/* Unit Card 2: Samsara Ayurveda - Alternating depth: Offset Upwards */}
-            <Link
-              to="/departments/ayurveda"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 lg:-translate-y-6 hover:border-sage-green/40 overflow-hidden"
-            >
-              {/* Embedded High-Fidelity Header Logo */}
-              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
-                <img
-                  src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
-                  alt="Samsara Ayurveda Unit Logo"
-                  className="h-16 w-auto object-contain"
-                />
-              </div>
-
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-sage-green/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
-              
-              <div>
-                <div className="flex items-center gap-3 mb-4 font-light text-sage-green text-3xl">
-                  02 /
-                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                </div>
-                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-sage-green transition-colors duration-300 break-words leading-tight">
-                  Dr. Unnikrishnan's Samsara Ayurveda
-                </h3>
-                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
-                  Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies 
-                  and ancient remedies customized to optimize system balance.
-                </p>
-              </div>
-
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-sage-green font-semibold">
-                Explore Ayurveda Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
-              </div>
-            </Link>
-
-            {/* Unit Card 3: CVN Kalari - Alternating depth: Offset Downwards */}
-            <Link
-              to="/departments/kalari"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:translate-y-6 hover:border-royal-navy/40 overflow-hidden"
-            >
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
-
-              {/* CVN Kalari Logo — same pattern as card 2 */}
-              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
-                <img
-                  src="/Cvn Kalari Logo.jpg"
-                  alt="CVN Kalari Logo"
-                  className="h-16 w-auto object-contain"
-                />
-              </div>
-              
-              <div>
-                <div className="flex items-center gap-3 mb-8 font-light text-royal-navy text-3xl">
-                  03 /
-                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 17l9 5 9-5"/><path d="M3 12l9 5 9-5"/></svg>
-                </div>
-                <h3 className="text-3xl font-serif text-obsidian-charcoal mb-4 group-hover:text-royal-navy transition-colors duration-300">
-                  CVN Kalari Chikilsa
-                </h3>
-                <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
-                  Traditional Marma point therapy and orthopaedic treatments derived from Kalaripayattu systems. 
-                  Designed to restore skeletal flow and muscular strength.
-                </p>
-              </div>
-
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-royal-navy font-semibold">
-                Explore Kalari Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
-              </div>
-            </Link>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-32 bg-clinical-white border-t border-platinum-slate/20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-20">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Clinical Standards</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient-Centric Philosophies</h2>
-            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: 'gem', title: 'World-Class Faculty', desc: 'Elite practitioners with global standards and decades of hands-on expertise.' },
-              { icon: 'zone', title: 'Contextual Zoning', desc: 'Distinct care zones configured specifically to their respective scientific systems.' },
-              { icon: 'leaf2', title: 'Integrative Protocols', desc: 'Merging cutting-edge medical technologies with ancient wisdom.' },
-              { icon: 'lock', title: 'Private Consultations', desc: 'Absolute confidentiality with one-on-one tailored restorative programs.' },
-            ].map((f) => (
-              <div key={f.title} className="bg-white p-8 rounded-[20px] border border-platinum-slate/20 hover:shadow-lg transition-all duration-300">
-                <div className="w-8 h-8 mb-6 text-champagne-gold">
-                  {f.icon === 'gem' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
-                  {f.icon === 'zone' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>)}
-                  {f.icon === 'leaf2' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>)}
-                  {f.icon === 'lock' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>)}
-                </div>
-                <h3 className="font-serif text-obsidian-charcoal text-lg mb-3">{f.title}</h3>
-                <p className="text-obsidian-charcoal/60 text-xs font-sans leading-relaxed">{f.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@ const departments = [
   },
   {
     id: 'ayurveda',
-    name: 'Samsara Ayurveda',
+    name: 'Saṃsāra Ayurveda',
     icon: '🌿',
     desc: 'Authentic Panchakarma, Vedic diagnostics, and therapeutic remedies.',
     colorClass: 'border-sage-green/20 hover:border-sage-green bg-sage-green/5',

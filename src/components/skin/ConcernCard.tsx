@@ -6,9 +6,10 @@ interface ConcernCardProps {
   description: string;
   image: string;
   link: string;
+  alt?: string;
 }
 
-const ConcernCard = ({ title, description, image, link }: ConcernCardProps) => {
+const ConcernCard = ({ title, description, image, link, alt }: ConcernCardProps) => {
   return (
     <motion.div 
       whileHover={{ y: -10 }}
@@ -19,7 +20,7 @@ const ConcernCard = ({ title, description, image, link }: ConcernCardProps) => {
         <div className="absolute inset-0 bg-obsidian-charcoal/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
         <img 
           src={image} 
-          alt={title} 
+          alt={alt || title} 
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
         />

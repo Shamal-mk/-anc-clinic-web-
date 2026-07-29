@@ -24,8 +24,9 @@ const Navbar = () => {
             
             {/* Left: Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="hover:opacity-90 transition-opacity min-w-[48px] min-h-[48px] flex items-center">
-                <img className="h-10 w-auto object-contain" src="/logos/ANC Logo.jpeg" alt="ANC Clinic Logo" />
+              <Link to="/" className="hover:opacity-90 transition-opacity min-w-[48px] min-h-[48px] flex flex-col items-center justify-center">
+                <img className="h-12 md:h-14 lg:h-16 w-auto object-contain mix-blend-multiply" src="/logos/ANC Logo.jpeg" alt="ANC Clinic Logo" />
+                <span className="text-[#48494B] font-medium text-[13px] tracking-widest leading-none mt-1 font-sans">wellness</span>
               </Link>
             </div>
 

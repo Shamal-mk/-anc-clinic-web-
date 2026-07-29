@@ -1,6 +1,6 @@
 import SkinHero from '../components/skin/SkinHero';
 import SkinIntro from '../components/skin/SkinIntro';
-import ConcernGrid from '../components/skin/ConcernGrid';
+import ExploreGrid from '../components/skin/ExploreGrid';
 import TreatmentGrid from '../components/skin/TreatmentGrid';
 import LayerMethodology from '../components/skin/LayerMethodology';
 import Consultation from '../components/skin/Consultation';
@@ -46,7 +46,7 @@ const Cosmetology = () => {
       <SkinIntro />
 
       {/* 3. Skin Concerns (Identify) */}
-      <ConcernGrid />
+      <ExploreGrid />
 
       {/* 4. Treatments (Resolve) */}
       <TreatmentGrid />
