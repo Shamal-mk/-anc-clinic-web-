@@ -66,9 +66,8 @@ const ExploreGrid = () => {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <SectionHeading title="Explore by Concern" subtitle="Identify" />
         
-        {/* Desktop: 4 columns | Tablet: 3 columns | Mobile: 2 columns */}
-        {/* For very small mobile we can fall back to 1 if it's too cramped, but user requested 2 for mobile. */}
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        {/* Desktop: 4 columns | Tablet: 2 columns | Mobile: 2 columns */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 auto-rows-fr">
           {concerns.map((concern, index) => (
             <motion.div 
               key={index}
@@ -76,6 +75,7 @@ const ExploreGrid = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: (index % 4) * 0.1, ease: "easeOut" }}
+              className="flex h-full w-full"
             >
               <SkinConcernCard {...concern} />
             </motion.div>
