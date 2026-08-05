@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo & Tagline */}
           <div className="md:col-span-1">
             <div className="inline-flex flex-col items-center bg-white p-1 rounded-xl mb-4">
-              <img src="/logos/ANC Logo.jpeg" alt="ANC Clinic" className="h-16 w-auto" />
+              <img className="h-12 md:h-14 lg:h-16 w-auto object-contain" src="/logos/ANC Logo.png" alt="ANC Clinic Logo" />
               <span className="text-[#48494B] font-medium text-[16px] tracking-widest leading-none mb-1 font-sans">wellness</span>
             </div>
             <p className="text-gray-400 text-sm font-sans leading-relaxed">

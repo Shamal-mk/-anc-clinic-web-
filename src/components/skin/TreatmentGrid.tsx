@@ -51,7 +51,7 @@ const TreatmentGrid = () => {
   return (
     <section id="treatments" className="py-24 md:py-32 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <SectionHeading title="Treatments" subtitle="Resolve" />
+        <SectionHeading title="Treatments"  />
         
         {/* Desktop: 3 columns | Tablet: 2 columns | Mobile: 1 column */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">

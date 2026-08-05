@@ -183,6 +183,47 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Patient Facilities */}
+      <section className="py-32 bg-[#FAFAFA] border-t border-platinum-slate/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-20">
+            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Our Environment</span>
+            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient Facilities</h2>
+            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              { icon: 'sofa', text: 'Comfortable Waiting Area' },
+              { icon: 'stethoscope', text: 'Spacious Consultation Rooms' },
+              { icon: 'pill', text: 'Pharmacy' },
+              { icon: 'calendar', text: 'Digital Appointment Booking' },
+              { icon: 'wheelchair', text: 'Wheelchair Accessibility' },
+              { icon: 'sparkle', text: 'Clean Treatment Rooms' },
+              { icon: 'doctor', text: 'Experienced Medical Team' },
+              { icon: 'integrate', text: 'Integrated Healthcare' },
+              { icon: 'parking', text: 'Parking Facility' },
+              { icon: 'leaf3', text: 'Hygienic Environment' },
+            ].map((facility, i) => (
+              <div key={i} className="bg-white p-6 rounded-[16px] border border-platinum-slate/25  transition-all duration-300 flex flex-col items-center text-center group">
+                <div className="w-7 h-7 mb-4 text-champagne-gold  transition-transform duration-300">
+                  {facility.icon === 'sofa' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5H2z"/><path d="M4 18v2"/><path d="M20 18v2"/></svg>)}
+                  {facility.icon === 'stethoscope' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>)}
+                  {facility.icon === 'pill' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v3"/><circle cx="17" cy="17" r="5"/><path d="m14.5 19.5 5-5"/></svg>)}
+                  {facility.icon === 'calendar' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>)}
+                  {facility.icon === 'wheelchair' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="17" cy="21" r="2"/><circle cx="7" cy="21" r="2"/><path d="M5 21v-4l4-4 4 4v4"/><circle cx="9" cy="8" r="2"/><path d="M9 10v4l4 3"/></svg>)}
+                  {facility.icon === 'sparkle' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3v1"/><path d="M12 20v1"/><path d="M3 12h1"/><path d="M20 12h1"/><path d="m18.364 5.636-.707.707"/><path d="m6.343 17.657-.707.707"/><path d="m5.636 5.636.707.707"/><path d="m17.657 17.657.707.707"/><circle cx="12" cy="12" r="4"/></svg>)}
+                  {facility.icon === 'doctor' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/><path d="M14 14h2a2 2 0 0 1 2 2v2h-4"/><path d="M16 16h2"/></svg>)}
+                  {facility.icon === 'integrate' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" x2="6" y1="9" y2="21"/></svg>)}
+                  {facility.icon === 'parking' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>)}
+                  {facility.icon === 'leaf3' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>)}
+                </div>
+                <p className="text-obsidian-charcoal/80 font-sans text-xs font-semibold leading-relaxed">{facility.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Founder's Message & Mission */}
       <section
         className="py-32 bg-white border-t border-platinum-slate/20"
@@ -292,47 +333,6 @@ const Home = () => {
               </div>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* Patient Facilities */}
-      <section className="py-32 bg-[#FAFAFA] border-t border-platinum-slate/20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-20">
-            <span className="text-champagne-gold uppercase tracking-widest text-xs font-semibold">Our Environment</span>
-            <h2 className="text-4xl md:text-5xl font-serif text-obsidian-charcoal mt-2 mb-4">Patient Facilities</h2>
-            <div className="h-[1px] w-24 bg-champagne-gold mx-auto" />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {[
-              { icon: 'sofa', text: 'Comfortable Waiting Area' },
-              { icon: 'stethoscope', text: 'Spacious Consultation Rooms' },
-              { icon: 'pill', text: 'Pharmacy' },
-              { icon: 'calendar', text: 'Digital Appointment Booking' },
-              { icon: 'wheelchair', text: 'Wheelchair Accessibility' },
-              { icon: 'sparkle', text: 'Clean Treatment Rooms' },
-              { icon: 'doctor', text: 'Experienced Medical Team' },
-              { icon: 'integrate', text: 'Integrated Healthcare' },
-              { icon: 'parking', text: 'Parking Facility' },
-              { icon: 'leaf3', text: 'Hygienic Environment' },
-            ].map((facility, i) => (
-              <div key={i} className="bg-white p-6 rounded-[16px] border border-platinum-slate/25 hover:shadow-md hover:border-champagne-gold/30 transition-all duration-300 flex flex-col items-center text-center group">
-                <div className="w-7 h-7 mb-4 text-champagne-gold group-hover:scale-110 transition-transform duration-300">
-                  {facility.icon === 'sofa' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5H2z"/><path d="M4 18v2"/><path d="M20 18v2"/></svg>)}
-                  {facility.icon === 'stethoscope' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>)}
-                  {facility.icon === 'pill' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M10.5 20H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v3"/><circle cx="17" cy="17" r="5"/><path d="m14.5 19.5 5-5"/></svg>)}
-                  {facility.icon === 'calendar' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>)}
-                  {facility.icon === 'wheelchair' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="17" cy="21" r="2"/><circle cx="7" cy="21" r="2"/><path d="M5 21v-4l4-4 4 4v4"/><circle cx="9" cy="8" r="2"/><path d="M9 10v4l4 3"/></svg>)}
-                  {facility.icon === 'sparkle' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3v1"/><path d="M12 20v1"/><path d="M3 12h1"/><path d="M20 12h1"/><path d="m18.364 5.636-.707.707"/><path d="m6.343 17.657-.707.707"/><path d="m5.636 5.636.707.707"/><path d="m17.657 17.657.707.707"/><circle cx="12" cy="12" r="4"/></svg>)}
-                  {facility.icon === 'doctor' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/><path d="M14 14h2a2 2 0 0 1 2 2v2h-4"/><path d="M16 16h2"/></svg>)}
-                  {facility.icon === 'integrate' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" x2="6" y1="9" y2="21"/></svg>)}
-                  {facility.icon === 'parking' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>)}
-                  {facility.icon === 'leaf3' && (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>)}
-                </div>
-                <p className="text-obsidian-charcoal/80 font-sans text-xs font-semibold leading-relaxed">{facility.text}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

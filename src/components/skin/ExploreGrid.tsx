@@ -34,29 +34,24 @@ const concerns = [
     image: '/skin/dark-circles.jpg',
   },
   {
-    title: 'Skin Brightening',
+    title: 'Dull Skin',
     description: 'Revitalize a dull complexion, restoring a natural, healthy, and radiant glow to your skin.',
-    image: '/skin/skin-brightening.jpg',
+    image: '/skin/dullness.png',
   },
   {
-    title: 'Open Pores',
+    title: 'Visible Pores',
     description: 'Visibly enlarged pores causing an uneven skin texture and increased sebum production.',
     image: '/skin/open-pores.jpg',
   },
   {
-    title: 'Anti-ageing',
+    title: 'Skin Ageing',
     description: 'Fine lines, wrinkles, skin laxity, or a loss of facial definition developing gradually over time.',
     image: '/skin/anti-ageing.jpg',
   },
   {
-    title: 'Hydration',
+    title: 'Dry Skin',
     description: 'Chronically dry, flaky, or dehydrated skin lacking in essential moisture barrier protection.',
     image: '/skin/hydration.jpg',
-  },
-  {
-    title: 'Medical Facials',
-    description: 'Clinical-grade facials tailored for deep cleansing, extractions, and intense targeted nourishment.',
-    image: '/skin/medical-facials.jpg',
   }
 ];
 
@@ -64,7 +59,7 @@ const ExploreGrid = () => {
   return (
     <section id="concerns" className="py-24 md:py-32 bg-[#FAFAFA]">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <SectionHeading title="Explore by Concern" subtitle="Identify" />
+        <SectionHeading title="Explore by Concern"  />
         
         {/* Desktop: 4 columns | Tablet: 2 columns | Mobile: 2 columns */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 auto-rows-fr">

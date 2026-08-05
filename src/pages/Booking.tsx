@@ -4,7 +4,7 @@ const departments = [
   {
     id: 'cosmetology',
     name: 'Skin & Cosmetology',
-    icon: '✨',
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
     desc: 'Medical aesthetics, clinical dermatology, and reconstructive care.',
     colorClass: 'border-champagne-gold/20 hover:border-champagne-gold bg-champagne-gold/5',
     doctors: [
@@ -17,7 +17,7 @@ const departments = [
   {
     id: 'ayurveda',
     name: 'Saṃsāra Ayurveda',
-    icon: '🌿',
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>,
     desc: 'Authentic Panchakarma, Vedic diagnostics, and therapeutic remedies.',
     colorClass: 'border-sage-green/20 hover:border-sage-green bg-sage-green/5',
     doctors: [
@@ -30,7 +30,7 @@ const departments = [
   {
     id: 'kalari',
     name: 'CVN Kalari',
-    icon: '⚔️',
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"/><path d="M13 19l6-6"/><path d="M16 16l4 4"/><path d="M19 21l2-2"/><path d="M9.5 17.5L21 6V3h-3L6.5 14.5"/><path d="M11 19l-6-6"/><path d="M8 16l-4 4"/><path d="M5 21l-2-2"/></svg>,
     desc: 'Traditional Marma point therapy, joint mobilization, and postural care.',
     colorClass: 'border-royal-navy/20 hover:border-royal-navy bg-royal-navy/5',
     doctors: [

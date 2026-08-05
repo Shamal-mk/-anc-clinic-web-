@@ -6,6 +6,8 @@ export const Image = (props: ImgHTMLAttributes<HTMLImageElement>) => {
 
   return (
     <img
+      loading="lazy"
+      decoding="async"
       {...props}
       onClick={(e) => {
         if (props.src) {
