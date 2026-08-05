@@ -6,12 +6,12 @@ const concerns = [
   {
     title: 'Acne',
     description: 'Active breakouts, blackheads, congested pores or recurring acne that keeps returning despite treatment.',
-    image: '/skin/acne.jpg',
+    image: '/skin/acne.jpeg',
   },
   {
     title: 'Acne Scars',
     description: 'Post-inflammatory hyperpigmentation, atrophic scarring, or pitted skin remaining after acne breakouts.',
-    image: '/skin/acne-scars.jpg',
+    image: '/skin/acne-scars.jpeg',
   },
   {
     title: 'Pigmentation',
