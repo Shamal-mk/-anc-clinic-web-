@@ -44,24 +44,32 @@ const Home = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
             
-            {/* Unit Card 1: Cosmetology - Alternating depth: Normal */}
+            {/* Unit Card 1: Cosmetology */}
             <Link
               to="/departments/cosmetology"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-champagne-gold/40 overflow-hidden"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-2 hover:border-champagne-gold/40 overflow-hidden"
             >
-              {/* Embedded High-Fidelity Header Logo */}
-              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+              {/* Premium Image with Overlay Logo */}
+              <div className="relative w-full aspect-[4/3] mb-8 rounded-[16px] overflow-hidden bg-platinum-slate/10 shadow-sm group-hover:shadow-md transition-shadow duration-700 z-10">
                 <Image
-                  src="/logos/Skin & Cosmetology Logo.png"
-                  alt="Skin & Cosmetology Logo"
-                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
+                  src="/skin/cosmetology-hero.jpeg"
+                  alt="Skin & Cosmetology"
+                  className="w-full h-full object-cover transform group-hover:scale-[1.04] transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-charcoal/20 via-transparent to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-80" />
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-2.5 rounded-xl shadow-sm border border-white/20">
+                  <Image
+                    src="/logos/Skin & Cosmetology Logo.png"
+                    alt="Skin & Cosmetology Logo"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
               </div>
 
               {/* Parallax Background Glow */}
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-champagne-gold/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-champagne-gold/5 rounded-full group-hover:scale-150 transition-transform duration-700 z-0" />
               
-              <div>
+              <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-8 font-light text-champagne-gold text-3xl">
                   01 /
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-1a6 6 0 0 1 12 0v1"/><path d="M9 12.5c-.5 1-.5 2.5 0 3.5"/><path d="M15 12.5c.5 1 .5 2.5 0 3.5"/></svg>
@@ -74,28 +82,36 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-champagne-gold font-semibold">
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-champagne-gold font-semibold relative z-10">
                 Explore Aesthetics Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
               </div>
             </Link>
 
-            {/* Unit Card 2: Saṃsāra Ayurveda - Alternating depth: Offset Upwards */}
+            {/* Unit Card 2: Saṃsāra Ayurveda */}
             <Link
               to="/departments/ayurveda"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 lg:-translate-y-6 hover:border-sage-green/40 overflow-hidden"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-2 hover:border-sage-green/40 overflow-hidden"
             >
-              {/* Embedded High-Fidelity Header Logo */}
-              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+              {/* Premium Image with Overlay Logo */}
+              <div className="relative w-full aspect-[4/3] mb-8 rounded-[16px] overflow-hidden bg-platinum-slate/10 shadow-sm group-hover:shadow-md transition-shadow duration-700 z-10">
                 <Image
-                  src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
-                  alt="Saṃsāra Ayurveda Unit Logo"
-                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
+                  src="/Ayurveda/samsara-hero.jpeg"
+                  alt="Saṃsāra Ayurveda"
+                  className="w-full h-full object-cover transform group-hover:scale-[1.04] transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-charcoal/20 via-transparent to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-80" />
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-2.5 rounded-xl shadow-sm border border-white/20">
+                  <Image
+                    src="/logos/Dr. Unnikrishnans samsara ayurveda unit  Logo.jpeg"
+                    alt="Saṃsāra Ayurveda Unit Logo"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
               </div>
 
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-sage-green/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-sage-green/5 rounded-full group-hover:scale-150 transition-transform duration-700 z-0" />
               
-              <div>
+              <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-4 font-light text-sage-green text-3xl">
                   02 /
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
@@ -109,28 +125,36 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-sage-green font-semibold">
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-sage-green font-semibold relative z-10">
                 Explore Ayurveda Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
               </div>
             </Link>
 
-            {/* Unit Card 3: CVN Kalari - Alternating depth: Offset Downwards */}
+            {/* Unit Card 3: CVN Kalari */}
             <Link
               to="/departments/kalari"
-              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 lg:translate-y-6 hover:border-royal-navy/40 overflow-hidden"
+              className="group relative flex flex-col justify-between bg-clinical-white p-10 rounded-[24px] border border-platinum-slate/40 hover:shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:-translate-y-2 hover:border-royal-navy/40 overflow-hidden"
             >
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-royal-navy/5 rounded-full group-hover:scale-150 transition-transform duration-700 z-0" />
 
-              {/* CVN Kalari Logo — same pattern as card 2 */}
-              <div className="w-full flex justify-center mb-8 bg-white py-4 px-6 rounded-[16px] border border-platinum-slate/20">
+              {/* Premium Image with Overlay Logo */}
+              <div className="relative w-full aspect-[4/3] mb-8 rounded-[16px] overflow-hidden bg-platinum-slate/10 shadow-sm group-hover:shadow-md transition-shadow duration-700 z-10">
                 <Image
-                  src="/logos/Cvn Kalari Logo.jpg"
-                  alt="CVN Kalari Logo"
-                  className="h-32 lg:h-40 w-full object-contain mix-blend-multiply"
+                  src="/Kalari/kalari-hero.jpeg"
+                  alt="CVN Kalari"
+                  className="w-full h-full object-cover transform group-hover:scale-[1.04] transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-charcoal/20 via-transparent to-transparent opacity-60 transition-opacity duration-700 group-hover:opacity-80" />
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md p-2.5 rounded-xl shadow-sm border border-white/20">
+                  <Image
+                    src="/logos/Cvn Kalari Logo.jpg"
+                    alt="CVN Kalari Logo"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
               </div>
               
-              <div>
+              <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-8 font-light text-royal-navy text-3xl">
                   03 /
                   <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L3 7l9 5 9-5-9-5z"/><path d="M3 17l9 5 9-5"/><path d="M3 12l9 5 9-5"/></svg>
@@ -144,7 +168,7 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-royal-navy font-semibold">
+              <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-royal-navy font-semibold relative z-10">
                 Explore Kalari Unit <span className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300">→</span>
               </div>
             </Link>
