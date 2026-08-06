@@ -120,8 +120,8 @@ const Home = () => {
                   Dr. Unnikrishnan's Saṃsāra Ayurveda
                 </h3>
                 <p className="text-obsidian-charcoal/60 font-sans font-light text-sm leading-relaxed mb-6">
-                  Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies 
-                  and ancient remedies customized to optimize system balance.
+                  Authentic holistic medicine directed by Dr. Unnikrishnan. Tailored Panchakarma therapies, 
+                  premium IP room facilities, and ancient remedies customized to optimize system balance.
                 </p>
               </div>
 

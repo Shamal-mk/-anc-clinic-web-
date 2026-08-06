@@ -63,7 +63,8 @@ const Ayurveda = () => {
     'Holistic Healing Approach',
     'Integrated Healthcare',
     'Evidence-Informed Care',
-    'Compassionate Patient Care'
+    'Compassionate Patient Care',
+    'Premium IP Room Facilities'
   ];
 
   return (
