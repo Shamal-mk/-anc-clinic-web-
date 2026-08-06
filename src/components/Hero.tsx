@@ -1,11 +1,41 @@
 import { Link } from 'react-router-dom';
 import { Image } from './Image';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <div className="relative min-h-screen bg-clinical-white pt-24 flex items-center overflow-hidden">
+      {/* Animated Cinematic Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.05, x: '0%', y: '0%' }}
+          animate={{ 
+            scale: [1.05, 1.08, 1.05],
+            x: ['0%', '-1.5%', '0%'],
+            y: ['0%', '1%', '0%']
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: 'linear'
+          }}
+          className="absolute inset-0 w-full h-full"
+          style={{ willChange: 'transform' }}
+        >
+          <img 
+            src="/hero/54FDA69F-D0EE-43D1-AFAD-0D998C2C6035.PNG" 
+            alt="ANC Clinic Architecture Background" 
+            className="w-full h-full object-cover opacity-[0.70] contrast-110 saturate-105"
+          />
+        </motion.div>
+        
+        {/* Soft beige gradient overlays - Adjusted for better background visibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-clinical-white/95 via-clinical-white/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-clinical-white/90 via-transparent to-clinical-white/10" />
+      </div>
+
       {/* Editorial Grid */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
         
         {/* Left Side: Bold Editorial Typography */}
         <div className="lg:col-span-6 flex flex-col justify-center text-left z-10 animate-fade-in-up">
